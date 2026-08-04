@@ -1,0 +1,44 @@
+{
+  "version": "0.4.4",
+  "phase": "R5",
+  "title": "Playtest, dispositivos e fechamento da reconstrução",
+  "status": "browser-smoke-approved-force-2d",
+  "fixed": [
+    "cleanup-disposed-mechanics",
+    "cleanup-disposed-waves",
+    "cleanup-disposed-thermal",
+    "workspace-view-hit-area-overlap",
+    "floating-guided-hud-overlap",
+    "roadmap-card-density",
+    "route-ready-signals",
+    "after-navigate-error-isolation",
+    "route-scroll-reset",
+    "hall-2d-fallback-clutter"
+  ],
+  "browserProfiles": [
+    {
+      "name": "desktop",
+      "viewport": "1365x768"
+    },
+    {
+      "name": "mobile",
+      "viewport": "390x844"
+    }
+  ],
+  "routes": [
+    "hall",
+    "coulomb",
+    "ohm",
+    "magnetism",
+    "energy",
+    "mechanics",
+    "waves",
+    "thermal",
+    "advanced",
+    "roadmap"
+  ],
+  "limitations": [
+    "O smoke test usa o fallback 2D porque a política do ambiente bloqueia navegação HTTP local.",
+    "WebGL, sombras, desempenho térmico, bateria e gestos físicos ainda exigem hardware real."
+  ]
+}

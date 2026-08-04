@@ -1,0 +1,380 @@
+{
+  "version": "1.2.0",
+  "generatedBy": "tools/generate_asset_pack.py",
+  "units": "meters",
+  "upAxis": "Y",
+  "forwardAxis": "-Z",
+  "artGrade": "premium-procedural-v2",
+  "rules": {
+    "format": "GLB 2.0",
+    "transforms": "applied",
+    "pivots": "interaction-ready",
+    "materials": "PBR slots by stable names",
+    "lods": "0 high, 1 medium, 2 low",
+    "surfaceDetail": "fasteners, bezels, labels, scales, vents and polarity marks"
+  },
+  "textures": {
+    "MAT_METAL_BRUSHED": {
+      "baseColor": "assets/textures/pbr/brushed-metal_basecolor.png",
+      "roughness": "assets/textures/pbr/brushed-metal_roughness.png",
+      "normal": "assets/textures/pbr/brushed-metal_normal.png",
+      "repeat": [
+        5,
+        5
+      ]
+    },
+    "MAT_RUBBER": {
+      "baseColor": "assets/textures/pbr/rubber_basecolor.png",
+      "roughness": "assets/textures/pbr/rubber_roughness.png",
+      "normal": "assets/textures/pbr/rubber_normal.png",
+      "repeat": [
+        4,
+        4
+      ]
+    },
+    "MAT_CERAMIC": {
+      "baseColor": "assets/textures/pbr/ceramic_basecolor.png",
+      "roughness": "assets/textures/pbr/ceramic_roughness.png",
+      "normal": "assets/textures/pbr/ceramic_normal.png",
+      "repeat": [
+        3,
+        3
+      ]
+    },
+    "MAT_BENCH_TOP": {
+      "baseColor": "assets/textures/pbr/bench-top_basecolor.png",
+      "roughness": "assets/textures/pbr/bench-top_roughness.png",
+      "normal": "assets/textures/pbr/bench-top_normal.png",
+      "repeat": [
+        6,
+        3
+      ]
+    }
+  },
+  "assets": {
+    "workbench": {
+      "category": "environment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/workbench_lod0.glb",
+          "distance": 0,
+          "bytes": 49412
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/workbench_lod1.glb",
+          "distance": 7,
+          "bytes": 27612
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/workbench_lod2.glb",
+          "distance": 14,
+          "bytes": 4908
+        }
+      ],
+      "collider": "assets/colliders/electrical/workbench.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "power-supply": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/power_supply_lod0.glb",
+          "distance": 0,
+          "bytes": 74372
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/power_supply_lod1.glb",
+          "distance": 7,
+          "bytes": 39556
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/power_supply_lod2.glb",
+          "distance": 14,
+          "bytes": 13852
+        }
+      ],
+      "collider": "assets/colliders/electrical/power-supply.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "multimeter": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/multimeter_lod0.glb",
+          "distance": 0,
+          "bytes": 45344
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/multimeter_lod1.glb",
+          "distance": 7,
+          "bytes": 26092
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/multimeter_lod2.glb",
+          "distance": 14,
+          "bytes": 8968
+        }
+      ],
+      "collider": "assets/colliders/electrical/multimeter.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "resistor-module": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/resistor_module_lod0.glb",
+          "distance": 0,
+          "bytes": 41452
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/resistor_module_lod1.glb",
+          "distance": 7,
+          "bytes": 22368
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/resistor_module_lod2.glb",
+          "distance": 14,
+          "bytes": 11784
+        }
+      ],
+      "collider": "assets/colliders/electrical/resistor-module.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "toggle-switch": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/toggle_switch_lod0.glb",
+          "distance": 0,
+          "bytes": 25576
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/toggle_switch_lod1.glb",
+          "distance": 7,
+          "bytes": 19420
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/toggle_switch_lod2.glb",
+          "distance": 14,
+          "bytes": 8556
+        }
+      ],
+      "collider": "assets/colliders/electrical/toggle-switch.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "lamp-load": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/lamp_load_lod0.glb",
+          "distance": 0,
+          "bytes": 26356
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/lamp_load_lod1.glb",
+          "distance": 7,
+          "bytes": 19012
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/lamp_load_lod2.glb",
+          "distance": 14,
+          "bytes": 9092
+        }
+      ],
+      "collider": "assets/colliders/electrical/lamp-load.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "ammeter": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/ammeter_lod0.glb",
+          "distance": 0,
+          "bytes": 32940
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/ammeter_lod1.glb",
+          "distance": 7,
+          "bytes": 23748
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/ammeter_lod2.glb",
+          "distance": 14,
+          "bytes": 8508
+        }
+      ],
+      "collider": "assets/colliders/electrical/ammeter.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "voltmeter": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/voltmeter_lod0.glb",
+          "distance": 0,
+          "bytes": 33160
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/voltmeter_lod1.glb",
+          "distance": 7,
+          "bytes": 23968
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/voltmeter_lod2.glb",
+          "distance": 14,
+          "bytes": 8728
+        }
+      ],
+      "collider": "assets/colliders/electrical/voltmeter.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "fuse-module": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/fuse_module_lod0.glb",
+          "distance": 0,
+          "bytes": 23940
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/fuse_module_lod1.glb",
+          "distance": 7,
+          "bytes": 15872
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/fuse_module_lod2.glb",
+          "distance": 14,
+          "bytes": 8640
+        }
+      ],
+      "collider": "assets/colliders/electrical/fuse-module.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "rheostat": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/rheostat_lod0.glb",
+          "distance": 0,
+          "bytes": 45760
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/rheostat_lod1.glb",
+          "distance": 7,
+          "bytes": 23908
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/rheostat_lod2.glb",
+          "distance": 14,
+          "bytes": 11752
+        }
+      ],
+      "collider": "assets/colliders/electrical/rheostat.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "diode-module": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/diode_module_lod0.glb",
+          "distance": 0,
+          "bytes": 19664
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/diode_module_lod1.glb",
+          "distance": 7,
+          "bytes": 13500
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/diode_module_lod2.glb",
+          "distance": 14,
+          "bytes": 8496
+        }
+      ],
+      "collider": "assets/colliders/electrical/diode-module.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    },
+    "led-module": {
+      "category": "equipment",
+      "lods": [
+        {
+          "level": 0,
+          "url": "assets/models/electrical/led_module_lod0.glb",
+          "distance": 0,
+          "bytes": 25476
+        },
+        {
+          "level": 1,
+          "url": "assets/models/electrical/led_module_lod1.glb",
+          "distance": 7,
+          "bytes": 16668
+        },
+        {
+          "level": 2,
+          "url": "assets/models/electrical/led_module_lod2.glb",
+          "distance": 14,
+          "bytes": 8700
+        }
+      ],
+      "collider": "assets/colliders/electrical/led-module.json",
+      "fallback": "procedural",
+      "status": "runtime-ready",
+      "surfaceDetails": true
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "version": "0.4.5",
+  "scope": "physics-only",
+  "qualityGate": {
+    "requires3DEnvironment": true,
+    "requiresInteractiveObject": true,
+    "requiresScientificState": true,
+    "requiresFunctionalInstrument": true,
+    "requiresResponsiveControls": true,
+    "requiresVisualEvidence": true,
+    "requiresScientificTests": true,
+    "requiresGuidedObjective": true,
+    "requiresAccessibleCheckpoints": true
+  },
+  "realism": [
+    "visual",
+    "physical",
+    "instrumental",
+    "interactive",
+    "environmental"
+  ],
+  "cameras": [
+    "free",
+    "orbit",
+    "bench",
+    "instrument",
+    "microscopic",
+    "analysis",
+    "comparison"
+  ],
+  "assetPolicy": {
+    "shipping": "GLB or glTF 2.0",
+    "textures": "PBR with KTX2/Basis when available",
+    "lod": "LOD0, LOD1 and LOD2 for heavy or repeated assets",
+    "collisions": "separate simplified collision proxies",
+    "units": "meters"
+  },
+  "profiles": {
+    "economic": {
+      "targetFps": 30,
+      "shadows": "essential-or-off",
+      "particles": "minimum",
+      "postProcessing": "off"
+    },
+    "medium": {
+      "targetFps": 30,
+      "shadows": "primary",
+      "particles": "moderate",
+      "postProcessing": "light"
+    },
+    "high": {
+      "targetFps": 45,
+      "shadows": "detailed",
+      "particles": "high",
+      "postProcessing": "moderate"
+    },
+    "ultra": {
+      "targetFps": 60,
+      "shadows": "maximum-allowed",
+      "particles": "maximum-adaptive",
+      "postProcessing": "full-optional"
+    },
+    "scientific": {
+      "targetFps": 30,
+      "shadows": "reduced",
+      "particles": "data-only",
+      "postProcessing": "legibility-first"
+    }
+  },
+  "futureIndependentPlatforms": [
+    "chemistry",
+    "history",
+    "financial-mathematics",
+    "nursing",
+    "occupational-safety"
+  ],
+  "designSystem": {
+    "phase": "visual-1",
+    "status": "implemented",
+    "tokens": "css/design-system.css",
+    "themeRuntime": "js/design-system.js",
+    "icons": "js/ui/icons.js",
+    "functionalPalette": [
+      "ready",
+      "measure",
+      "attention",
+      "risk",
+      "failure",
+      "disabled"
+    ],
+    "materialLanguage": [
+      "technical-metal",
+      "functional-glass",
+      "ceramic",
+      "rubber",
+      "polymer"
+    ],
+    "densityModes": [
+      "comfortable",
+      "compact"
+    ],
+    "uiScale": [
+      90,
+      100,
+      110,
+      120
+    ]
+  },
+  "renderCore": "phase-2-shared-runtime",
+  "hallPremium": {
+    "phase": "visual-4",
+    "status": "implemented",
+    "architecture": "closed-procedural-science-center",
+    "sectors": 8,
+    "navigation": [
+      "orbit",
+      "guided-tour",
+      "teleport-map",
+      "accessible-2d"
+    ],
+    "audio": "generated-web-audio-hrtf",
+    "mobile": "adaptive"
+  },
+  "status": "phase-15-guided-learning-and-pedagogical-accessibility",
+  "optimization": {
+    "adaptiveTiers": [
+      "full",
+      "balanced",
+      "reduced",
+      "minimal"
+    ],
+    "sceneSuspension": true,
+    "webglRecovery": true,
+    "runtimeDiagnostics": true,
+    "staticBudget": "assets/performance-budget.json",
+    "scientificStateIndependentFromFps": true
+  },
+  "artisticRefinement": {
+    "inspectionLighting": true,
+    "physicalMaterialFinish": true,
+    "premiumElectricalAssetGrade": "premium-procedural-v2",
+    "details": [
+      "fasteners",
+      "bezels",
+      "labels",
+      "scales",
+      "vents",
+      "polarity marks",
+      "internal parts"
+    ],
+    "cameraControls": [
+      "inertial orbit",
+      "pinch zoom",
+      "two-finger pan",
+      "double-tap reset",
+      "keyboard",
+      "mobile toolbar"
+    ]
+  },
+  "deviceValidation": {
+    "matrix": "local JSON and CSV",
+    "manualCriteria": [
+      "visual",
+      "touch",
+      "readability",
+      "orientation",
+      "temperature",
+      "battery"
+    ],
+    "automaticChecks": [
+      "viewport",
+      "WebGL",
+      "touch targets",
+      "storage",
+      "fullscreen",
+      "PWA",
+      "runtime metrics"
+    ]
+  },
+  "pedagogyAccessibility": {
+    "objectiveHud": "compact-and-collapsible",
+    "checkpoints": 4,
+    "tutorial": "first-visit-optional",
+    "progress": "local-resumable",
+    "evidence": "JSON",
+    "profiles": [
+      "simplified-instructions",
+      "large-touch-targets",
+      "strong-focus",
+      "persistent-labels",
+      "reduced-motion",
+      "high-contrast"
+    ],
+    "usageValidation": [
+      "economic",
+      "medium",
+      "high",
+      "ultra"
+    ]
+  }
+}

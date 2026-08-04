@@ -1,0 +1,311 @@
+{
+  "version": "1.2.0",
+  "generatedAt": "2026-08-03",
+  "files": [
+    {
+      "path": "assets/models/electrical/ammeter_lod0.glb",
+      "bytes": 32940,
+      "sha256": "724868c833d95716668e06dde24cfca5c9e6dd28b6c7026909fe55b363b1c73d"
+    },
+    {
+      "path": "assets/models/electrical/ammeter_lod1.glb",
+      "bytes": 23748,
+      "sha256": "1b49ad54f3a34649bdf3769d0f9a039efd4b8aae78864991dd75e3b108792d9a"
+    },
+    {
+      "path": "assets/models/electrical/ammeter_lod2.glb",
+      "bytes": 8508,
+      "sha256": "838a7acdcae5d1bd95aedf32f1162dcaed84d9a93f66e9158005a47d42894de3"
+    },
+    {
+      "path": "assets/models/electrical/diode_module_lod0.glb",
+      "bytes": 19664,
+      "sha256": "524387d44750c6db5c0aad065f4b47e606341109e173b5715cd6778c7ec85c4d"
+    },
+    {
+      "path": "assets/models/electrical/diode_module_lod1.glb",
+      "bytes": 13500,
+      "sha256": "da81b65af42fa69b99b752ef7e50090c95cac4792e4314cd4f8d7496e7595c62"
+    },
+    {
+      "path": "assets/models/electrical/diode_module_lod2.glb",
+      "bytes": 8496,
+      "sha256": "1cca4cdc5114094fb09b3565d394b90f4d339efc825cca17bf5d24b91a0f5918"
+    },
+    {
+      "path": "assets/models/electrical/fuse_module_lod0.glb",
+      "bytes": 23940,
+      "sha256": "b11defa9ff8c3d5b46f0e0865c8feb228b69908564161217c258ccbeb6de4a2f"
+    },
+    {
+      "path": "assets/models/electrical/fuse_module_lod1.glb",
+      "bytes": 15872,
+      "sha256": "cbbc7754c9f2f8a71b07084b6b9f3a93e9750f9e80da5b3f101c8ae92621909e"
+    },
+    {
+      "path": "assets/models/electrical/fuse_module_lod2.glb",
+      "bytes": 8640,
+      "sha256": "673f8d73f11b6f2074e28eef8ed72e37ec4d752c1adc703b8c7dcf4410942a4e"
+    },
+    {
+      "path": "assets/models/electrical/lamp_load_lod0.glb",
+      "bytes": 26356,
+      "sha256": "9e584892faf4787f06a81cd369d11554a5fe40785fc1b941298caabec104e913"
+    },
+    {
+      "path": "assets/models/electrical/lamp_load_lod1.glb",
+      "bytes": 19012,
+      "sha256": "75da6585f1c6663f8fa5029625a4561e9b37027d2161ffd903ba6a58adf365fa"
+    },
+    {
+      "path": "assets/models/electrical/lamp_load_lod2.glb",
+      "bytes": 9092,
+      "sha256": "460592fc564c795b2d2b0d586133feec4d677b6f26599c788644a45eaf6f2b8c"
+    },
+    {
+      "path": "assets/models/electrical/led_module_lod0.glb",
+      "bytes": 25476,
+      "sha256": "60259fb471a9194ed56afd288c4a51b46a1e6b9b433b391b3add8d4bf49752e0"
+    },
+    {
+      "path": "assets/models/electrical/led_module_lod1.glb",
+      "bytes": 16668,
+      "sha256": "ce1cacdd88724b0556c33a5191d11427196e137321d6217373058c3f586be2fa"
+    },
+    {
+      "path": "assets/models/electrical/led_module_lod2.glb",
+      "bytes": 8700,
+      "sha256": "05a60c9029468b556d6259e55b70dc8ebf9bd5ca597e1ca628249b7c7289937c"
+    },
+    {
+      "path": "assets/models/electrical/multimeter_lod0.glb",
+      "bytes": 45344,
+      "sha256": "6c51852dda12e000b7f45d56f66a41f102426cf2bace7b37373427ba7c77cf1d"
+    },
+    {
+      "path": "assets/models/electrical/multimeter_lod1.glb",
+      "bytes": 26092,
+      "sha256": "3aada09232cca53e7023e2e8539f3564262a1e3f3f612ce324b8a6b0a307bc0c"
+    },
+    {
+      "path": "assets/models/electrical/multimeter_lod2.glb",
+      "bytes": 8968,
+      "sha256": "854b50535400537cfc8bc14a826c20dcb6ecc631c725c51a246116d7ae3c0bcd"
+    },
+    {
+      "path": "assets/models/electrical/power_supply_lod0.glb",
+      "bytes": 74372,
+      "sha256": "bc004e8007976583b25668bddd11a1ed5b6993fa987d58f1aec043d563d61495"
+    },
+    {
+      "path": "assets/models/electrical/power_supply_lod1.glb",
+      "bytes": 39556,
+      "sha256": "3d295638fc22575b335443da57e5a1acd518f6a415e110bb830d9e7da34f9867"
+    },
+    {
+      "path": "assets/models/electrical/power_supply_lod2.glb",
+      "bytes": 13852,
+      "sha256": "6021d3b1c03dff8a656c072f159375c3cbd5045116b5bde1ea431b18fca5a60b"
+    },
+    {
+      "path": "assets/models/electrical/resistor_module_lod0.glb",
+      "bytes": 41452,
+      "sha256": "78659d03bf62b32aa406acebdc6126eac4d9ac3ef1bdfd3afa96bf21ffd617bb"
+    },
+    {
+      "path": "assets/models/electrical/resistor_module_lod1.glb",
+      "bytes": 22368,
+      "sha256": "7b094a321465f963e113524fd37105470f6b8df36c44c25a47970642b99555c9"
+    },
+    {
+      "path": "assets/models/electrical/resistor_module_lod2.glb",
+      "bytes": 11784,
+      "sha256": "5df6c7c467331908d0e171a4f09fe4525af7f5a960a20690728911ddf6c366bb"
+    },
+    {
+      "path": "assets/models/electrical/rheostat_lod0.glb",
+      "bytes": 45760,
+      "sha256": "7d5cd66e183bd9321cc87e7bd3b585dcfebab89cc854ff1bffd09d64d4873074"
+    },
+    {
+      "path": "assets/models/electrical/rheostat_lod1.glb",
+      "bytes": 23908,
+      "sha256": "0476153e36d06ef2ccbae70db61e43b7d237fef6930d67d268874b7be884e010"
+    },
+    {
+      "path": "assets/models/electrical/rheostat_lod2.glb",
+      "bytes": 11752,
+      "sha256": "b17445936c4571728efed82b7e579a04985d1d20fffc0c6a691a2e8f413b922f"
+    },
+    {
+      "path": "assets/models/electrical/toggle_switch_lod0.glb",
+      "bytes": 25576,
+      "sha256": "2799432d03429526372e8ebfdac9b4f6786e47f6f3d5aca7a9da12fc81c0c985"
+    },
+    {
+      "path": "assets/models/electrical/toggle_switch_lod1.glb",
+      "bytes": 19420,
+      "sha256": "81f5bd59f808898761b2594339a165e5c5603b705814c8688edd88a9aad627b3"
+    },
+    {
+      "path": "assets/models/electrical/toggle_switch_lod2.glb",
+      "bytes": 8556,
+      "sha256": "a194fac2edee42f36003dede16acba8f90d832aafab4c89339681508a0ec2eea"
+    },
+    {
+      "path": "assets/models/electrical/voltmeter_lod0.glb",
+      "bytes": 33160,
+      "sha256": "54000a080693c481e0fb9ebc5a6127da38ee1d277b084f59575569da821dc6be"
+    },
+    {
+      "path": "assets/models/electrical/voltmeter_lod1.glb",
+      "bytes": 23968,
+      "sha256": "2ab881cc716f01bc5e2245ba8d8baa8dfafa847521c07567aaaaca531d6da6b8"
+    },
+    {
+      "path": "assets/models/electrical/voltmeter_lod2.glb",
+      "bytes": 8728,
+      "sha256": "d57e1e15ec787b035e0e692acfa7128566490d1ab096ad26dc4645fb1ea5162d"
+    },
+    {
+      "path": "assets/models/electrical/workbench_lod0.glb",
+      "bytes": 49412,
+      "sha256": "0cb1970aa44f01f5a60ca455c3270c28c945d932b4b9d8b09cf8530f0a585494"
+    },
+    {
+      "path": "assets/models/electrical/workbench_lod1.glb",
+      "bytes": 27612,
+      "sha256": "f58dc7ca40dd4467d7c80fcb8e4f53626cb6756c3e4803022542b686f6c02354"
+    },
+    {
+      "path": "assets/models/electrical/workbench_lod2.glb",
+      "bytes": 4908,
+      "sha256": "c7cf1c3508697060c2556fd550149858a367a12abe02b0917bf8630028e93084"
+    },
+    {
+      "path": "assets/textures/pbr/bench-top_basecolor.png",
+      "bytes": 81977,
+      "sha256": "b25f7228c7fcfbb5189f22c8dfbd7a5bf8c7d5af4c5f9ac03ea957f8dc31120a"
+    },
+    {
+      "path": "assets/textures/pbr/bench-top_normal.png",
+      "bytes": 115503,
+      "sha256": "a2f87f3996d78b1957dd9bdb167a2675693cbd6380f081a62c090b851e7cea7f"
+    },
+    {
+      "path": "assets/textures/pbr/bench-top_roughness.png",
+      "bytes": 47193,
+      "sha256": "0fb0103adb8d85c3422df4fb7a04674c1315afe8bcabae803475ead1830ef940"
+    },
+    {
+      "path": "assets/textures/pbr/brushed-metal_basecolor.png",
+      "bytes": 38973,
+      "sha256": "eba97aaeff124b00a190cc0154d06bb15cd6e5146d0face4ce9d5256f5d9bbdb"
+    },
+    {
+      "path": "assets/textures/pbr/brushed-metal_normal.png",
+      "bytes": 97289,
+      "sha256": "af4bbdebfc3c4f9c809af8132ac030f7fcf9e1e5f6ef96b8f55f023502a238ad"
+    },
+    {
+      "path": "assets/textures/pbr/brushed-metal_roughness.png",
+      "bytes": 41560,
+      "sha256": "0bd26416a6829590c0d03537221d3e80a1ab332881461ae8a5e6d77e44b942be"
+    },
+    {
+      "path": "assets/textures/pbr/ceramic_basecolor.png",
+      "bytes": 65311,
+      "sha256": "a17742ddc211d5cf49256f3ee494a4fd6386b1a72520143ab7d99e4e882194b2"
+    },
+    {
+      "path": "assets/textures/pbr/ceramic_normal.png",
+      "bytes": 115441,
+      "sha256": "fdc0968ba41beeb7d9ffec7b686329957ec63859ff85fa4f792aef7c910a0cb1"
+    },
+    {
+      "path": "assets/textures/pbr/ceramic_roughness.png",
+      "bytes": 47262,
+      "sha256": "2fe0f8d052ff262dc35f33833e510a6aad48010293aa01ea9cc6ef2c090b2114"
+    },
+    {
+      "path": "assets/textures/pbr/rubber_basecolor.png",
+      "bytes": 58564,
+      "sha256": "def3bf577b7f4f03714e3f13b828e8afe6c124d1c8408eb8bb60fd50eb647995"
+    },
+    {
+      "path": "assets/textures/pbr/rubber_normal.png",
+      "bytes": 115495,
+      "sha256": "df444c1c63ae45fca8d4066fe4bacc22fbff9f226b622bf0672f79fd3f818131"
+    },
+    {
+      "path": "assets/textures/pbr/rubber_roughness.png",
+      "bytes": 47231,
+      "sha256": "3b3621ce22400e56d990eedc7320baf7347eed8b840abccb7e83b8d97651188b"
+    },
+    {
+      "path": "assets/colliders/electrical/ammeter.json",
+      "bytes": 230,
+      "sha256": "92f5f98447f92997e0f4fe99c641687e6286208ff40e677135a0cce10f4a4ff1"
+    },
+    {
+      "path": "assets/colliders/electrical/diode-module.json",
+      "bytes": 235,
+      "sha256": "38e194c26cd238f96d6635c40d4be4c5febc1bb5c491b516fef6f1810561e85f"
+    },
+    {
+      "path": "assets/colliders/electrical/fuse-module.json",
+      "bytes": 234,
+      "sha256": "0b7eed30babda9b5df4ec7b94b22429e54d2633f6df601d3e45dcc11c28bf5c1"
+    },
+    {
+      "path": "assets/colliders/electrical/lamp-load.json",
+      "bytes": 229,
+      "sha256": "391b6307fea59c8e2b8108e8d7690d1388f8d245fee9ad9aea9132758b37b639"
+    },
+    {
+      "path": "assets/colliders/electrical/led-module.json",
+      "bytes": 233,
+      "sha256": "5d91464b78aeac260920246f71667d999baa8cc2fc789e0f3f42632803b0a84f"
+    },
+    {
+      "path": "assets/colliders/electrical/multimeter.json",
+      "bytes": 233,
+      "sha256": "a60941586e4df2c60968e996039fa126b6081cf33f9059fbd10fd02fd195fc56"
+    },
+    {
+      "path": "assets/colliders/electrical/power-supply.json",
+      "bytes": 235,
+      "sha256": "fce6dbc380551aff2f510198a37455540c0bacf5cb407b8f300f3fe6f3a6c18c"
+    },
+    {
+      "path": "assets/colliders/electrical/resistor-module.json",
+      "bytes": 236,
+      "sha256": "8f68a4a5a4f8a2088299f1fb4943400fc96d1c31d91814282023e7c4a8dff0b7"
+    },
+    {
+      "path": "assets/colliders/electrical/rheostat.json",
+      "bytes": 230,
+      "sha256": "4280de4ef245eabd5f25043cfd150e77f530213c917c9dcd3653e6ed84af10c9"
+    },
+    {
+      "path": "assets/colliders/electrical/toggle-switch.json",
+      "bytes": 234,
+      "sha256": "63dce6d45cb78ad9e8c2374ec7ed0826df7cb166e13e4f2888add87db608a1af"
+    },
+    {
+      "path": "assets/colliders/electrical/voltmeter.json",
+      "bytes": 232,
+      "sha256": "7779ba208f6f17fb1392c977dbe56255d9e56a76b68ddc2f02ccb0c87d0888e5"
+    },
+    {
+      "path": "assets/colliders/electrical/workbench.json",
+      "bytes": 392,
+      "sha256": "f62985078d505985d334f809ad03a30b55d06ef706c8bae3ef7b3c959b7c2610"
+    },
+    {
+      "path": "assets/models/electrical/manifest.json",
+      "bytes": 10168,
+      "sha256": "3ae8bf8e8b486f3ece48b205d067819f00a2234d510599df70e624a29fd572b4"
+    }
+  ]
+}

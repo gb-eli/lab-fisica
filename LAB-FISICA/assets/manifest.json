@@ -1,0 +1,508 @@
+{
+  "version": "0.4.5",
+  "policy": {
+    "shipping3d": "GLB ou glTF 2.0",
+    "textures": "KTX2 quando o pipeline estiver disponível",
+    "fallback": "geometria procedural ou representação 2D",
+    "privacy": "nenhum asset deve incorporar dados pessoais ou escolares reais",
+    "scope": "Física exclusivamente; outras áreas em plataformas independentes"
+  },
+  "groups": {
+    "hall": {
+      "mode": "premium-procedural-architecture-with-glb-preview",
+      "module": "js/modules/hall3d.js",
+      "fallback": "CSS 2D",
+      "status": "functional-premium-hall",
+      "engine": "js/render/runtime.js",
+      "renderCore": "shared-premium-core",
+      "features": [
+        "closed dome architecture",
+        "eight physical sectors",
+        "radial corridors",
+        "upper catwalk",
+        "central elevator core",
+        "sector vignettes",
+        "GLB electrical preview",
+        "guided tour",
+        "teleport map",
+        "accessible 2D map",
+        "generated spatial audio",
+        "mobile adaptive detail"
+      ],
+      "audio": "js/modules/hall-audio.js",
+      "vignettes": "js/modules/hall-vignettes.js",
+      "style": "css/hall-premium.css"
+    },
+    "electrostatics": {
+      "mode": "threejs-guided-electrostatics-with-2d-fallback",
+      "module": "js/modules/coulomb.js",
+      "engine": "js/science/electrostatics.js",
+      "status": "functional-r2-guided-3d",
+      "scene": "js/modules/coulomb3d.js"
+    },
+    "circuits": {
+      "mode": "threejs-glb-electrical-bench",
+      "module": "js/modules/ohm.js",
+      "status": "functional-premium-electricity-lab",
+      "assetsManifest": "assets/models/electrical/manifest.json",
+      "equipment": [
+        "power-supply",
+        "multimeter",
+        "ammeter",
+        "voltmeter",
+        "fuse-module",
+        "resistor-module",
+        "rheostat",
+        "toggle-switch",
+        "lamp-load",
+        "diode-module",
+        "led-module"
+      ],
+      "features": [
+        "GLB 2.0",
+        "three LODs",
+        "PBR textures",
+        "procedural fallback",
+        "360 inspection",
+        "animated cables",
+        "universal selection",
+        "transform gizmo",
+        "magnetic snapping",
+        "rewireable terminals",
+        "multi-cable branch terminals",
+        "undo and redo",
+        "local layout persistence",
+        "source CV and CC modes",
+        "multimeter voltage current resistance continuity",
+        "COM VΩ and A jacks",
+        "guided 3D probe wiring",
+        "circuit and meter fuses",
+        "controlled measurement faults",
+        "LED and diode polarity",
+        "rheostat animation",
+        "thermal response",
+        "instrument accuracy and uncertainty",
+        "series parallel and mixed networks",
+        "nodal resistive solver",
+        "branch voltage current and power table",
+        "ideal realistic and experimental modes",
+        "guided practices",
+        "JSON evidence export",
+        "CSV branch export",
+        "three visible resistor modules",
+        "premium fasteners bezels labels scales and polarity marks",
+        "inspection lighting",
+        "shared mobile camera toolbar"
+      ],
+      "scienceEngine": "js/science/resistive-network.js",
+      "instrumentEngine": "js/science/electrical-instruments.js"
+    },
+    "advanced-frontier": {
+      "mode": "procedural-threejs-premium-advanced-laboratory",
+      "module": "js/modules/advanced3d.js",
+      "topics": [
+        "quantum",
+        "dark-matter",
+        "relativity",
+        "black-hole",
+        "time-causality"
+      ],
+      "scientific-status": "parameterized educational models with explicit limitations",
+      "status": "functional-premium-advanced-physics-lab",
+      "renderCore": "shared-premium-core",
+      "interface": "js/modules/advanced.js",
+      "scienceEngine": "js/science/advanced-physics.js",
+      "style": "css/advanced-lab.css",
+      "features": [
+        "quantum wave packet and tunneling",
+        "de Broglie wavelength",
+        "relativistic clocks and length contraction",
+        "interstellar journey comparison",
+        "galaxy rotation curves",
+        "dark matter halo comparison",
+        "Schwarzschild radius and stable orbit markers",
+        "weak-field gravitational deflection",
+        "spacetime interval and light cones",
+        "360 orbit and zoom",
+        "scientific graphs",
+        "local persistence",
+        "JSON evidence export",
+        "mobile adaptive UI",
+        "2D fallback"
+      ]
+    },
+    "future-glb": {
+      "environment": [
+        "workbench"
+      ],
+      "equipment": [
+        "power-supply",
+        "multimeter",
+        "ammeter",
+        "voltmeter",
+        "fuse-module",
+        "resistor-module",
+        "rheostat",
+        "toggle-switch",
+        "lamp-load",
+        "diode-module",
+        "led-module"
+      ],
+      "instruments": [
+        "multimeter",
+        "ammeter",
+        "voltmeter",
+        "regulated-power-supply"
+      ],
+      "effects": [
+        "animated-current-cables",
+        "thermal-emission",
+        "LED-emission",
+        "fuse-open-state",
+        "instrument-displays"
+      ],
+      "status": "expanded-electrical-instrument-pack-functional"
+    },
+    "visual-standard": {
+      "document": "docs/PADRAO_GRAFICO_OBRIGATORIO.md",
+      "machineReadable": "assets/graphics-standard.json",
+      "roadmap": "docs/PLANO_EVOLUCAO_VISUAL_360.md",
+      "status": "phase-r6-webgl-pilot-v0.4.5",
+      "designSystem": "css/design-system.css",
+      "icons": "js/ui/icons.js"
+    },
+    "render-core": {
+      "runtime": "js/render/runtime.js",
+      "threeLoader": "js/render/three-loader.js",
+      "controls": "js/render/orbit-controller.js",
+      "environment": "js/render/environment.js",
+      "materials": "js/render/materials.js",
+      "postProcessing": "js/render/postfx.js",
+      "performance": "js/render/performance-monitor.js",
+      "lifecycle": "js/render/dispose.js",
+      "status": "functional-adaptive-runtime-with-context-recovery",
+      "adaptiveOptimizer": "js/render/adaptive-scene-optimizer.js",
+      "runtimeRegistry": "js/render/runtime-registry.js",
+      "performanceBudget": "assets/performance-budget.json",
+      "artisticRefinement": "js/render/artistic-refinement.js",
+      "cameraAssist": "shared-touch-toolbar-inertia-pan-double-tap",
+      "deviceValidation": "js/device-validation.js",
+      "preflight": "js/render/webgl-preflight.js",
+      "firstFrameWatchdog": "js/render/render-watchdog.js",
+      "webglPilot": "validation/r6-webgl-pilot.json"
+    },
+    "asset-pipeline": {
+      "manifest": "assets/models/electrical/manifest.json",
+      "manager": "js/assets/asset-manager.js",
+      "loader": "js/assets/glb-loader-lite.js",
+      "textures": "assets/textures/pbr/",
+      "colliders": "assets/colliders/electrical/",
+      "generator": "tools/generate_asset_pack.py",
+      "status": "functional-premium-procedural-v2",
+      "manifestVersion": "1.2.0",
+      "artGrade": "premium-procedural-v2"
+    },
+    "interaction-system": {
+      "manager": "js/interaction/interaction-manager.js",
+      "history": "js/interaction/command-history.js",
+      "gizmo": "js/interaction/transform-gizmo.js",
+      "snapping": "js/interaction/snap-system.js",
+      "connections": "js/interaction/connection-manager.js",
+      "referenceModule": "js/modules/ohm.js",
+      "status": "functional-reference-implementation"
+    },
+    "magnetism": {
+      "mode": "procedural-threejs-premium-laboratory",
+      "module": "js/modules/magnetism.js",
+      "scene": "js/modules/magnetism3d.js",
+      "scienceEngine": "js/science/electromagnetism.js",
+      "style": "css/magnetism-lab.css",
+      "status": "functional-premium-electromagnetism-lab",
+      "experiments": [
+        "magnets-and-field",
+        "solenoid-electromagnet",
+        "faraday-lenz-induction",
+        "electric-motor",
+        "ac-generator",
+        "transformer"
+      ],
+      "features": [
+        "360 orbit and zoom",
+        "PBR procedural equipment",
+        "magnetic field lines",
+        "iron filings",
+        "3D compasses",
+        "field probe",
+        "coil particles",
+        "waveform displays",
+        "thermal response",
+        "guided practice",
+        "local persistence",
+        "JSON evidence export",
+        "mobile adaptive UI",
+        "2D fallback"
+      ]
+    },
+    "energy": {
+      "mode": "procedural-threejs-premium-energy-lab",
+      "module": "js/modules/energy3d.js",
+      "interface": "js/modules/energy.js",
+      "scienceEngine": "js/science/energy-grid.js",
+      "style": "css/energy-lab.css",
+      "status": "functional-premium-energy-house-grid-lab",
+      "experiences": [
+        "house electrical cutaway",
+        "distribution panel and protection",
+        "solar wind battery microgrid",
+        "distribution network and losses"
+      ],
+      "features": [
+        "3D cutaway residence",
+        "room loads",
+        "branch breakers",
+        "30 mA residual current device",
+        "bidirectional meter",
+        "monthly kWh and tariff",
+        "solar thermal derating",
+        "wind cubic power model",
+        "battery charge and discharge",
+        "grid import and export",
+        "transformer and line losses",
+        "360 camera and zoom",
+        "JSON evidence export",
+        "2D fallback"
+      ]
+    },
+    "mechanics": {
+      "mode": "procedural-threejs-premium-mechanics-lab",
+      "module": "js/modules/mechanics.js",
+      "scene": "js/modules/mechanics3d.js",
+      "scienceEngine": "js/science/mechanics.js",
+      "style": "css/mechanics-lab.css",
+      "status": "functional-premium-mechanics-gravity-lab",
+      "experiences": [
+        "inclined-plane-dynamics",
+        "projectile-motion",
+        "one-dimensional-collisions",
+        "pendulum-and-spring",
+        "free-fall-and-circular-orbit"
+      ],
+      "features": [
+        "360 orbit and zoom",
+        "slow motion and time scale",
+        "force vectors",
+        "friction states",
+        "projectile trajectory and drag comparison",
+        "momentum and restitution",
+        "pendulum and damped spring",
+        "celestial gravity comparison",
+        "free fall and orbit",
+        "scientific graphs",
+        "JSON evidence export",
+        "mobile adaptive UI",
+        "2D fallback"
+      ]
+    },
+    "waves": {
+      "mode": "procedural-threejs-premium-waves-optics-lab",
+      "module": "js/modules/waves.js",
+      "scene": "js/modules/waves3d.js",
+      "scienceEngine": "js/science/waves-optics.js",
+      "style": "css/waves-lab.css",
+      "status": "functional-premium-waves-sound-optics-lab",
+      "experiences": [
+        "wave-tank-interference-diffraction",
+        "resonance-strings-tubes-harmonics",
+        "sound-acoustics-echo-reverberation",
+        "doppler-source-observer",
+        "mirrors-lenses-refraction",
+        "prism-fiber-double-slit"
+      ],
+      "features": [
+        "360 orbit and zoom",
+        "adaptive wave surface",
+        "standing waves and nodes",
+        "safe Web Audio signal",
+        "sound pressure particles",
+        "Doppler wavefronts",
+        "optical ray bench",
+        "Snell and total internal reflection",
+        "dispersion and visible spectrum",
+        "fiber guidance",
+        "double-slit pattern",
+        "scientific graphs",
+        "JSON evidence export",
+        "mobile adaptive UI",
+        "2D fallback"
+      ]
+    },
+    "thermal": {
+      "mode": "procedural-threejs-premium-thermology-fluids-lab",
+      "module": "js/modules/thermal.js",
+      "scene": "js/modules/thermal3d.js",
+      "scienceEngine": "js/science/thermodynamics-fluids.js",
+      "style": "css/thermal-lab.css",
+      "status": "functional-premium-thermology-gases-fluids-lab",
+      "experiences": [
+        "calorimetry-and-equilibrium",
+        "conduction-convection-radiation",
+        "phase-changes-and-ideal-gas",
+        "hydrostatics-and-buoyancy",
+        "continuity-bernoulli-viscosity",
+        "heat-engine-and-refrigeration"
+      ],
+      "features": [
+        "360 orbit and zoom",
+        "thermal particles",
+        "temperature-responsive PBR materials",
+        "phase fractions",
+        "gas piston",
+        "hydrostatic pressure bands",
+        "buoyancy vectors",
+        "Venturi flow particles",
+        "Reynolds classification",
+        "Carnot comparison",
+        "scientific graphs",
+        "JSON evidence export",
+        "mobile adaptive UI",
+        "2D fallback"
+      ]
+    },
+    "device-validation": {
+      "module": "js/device-validation.js",
+      "style": "css/device-validation.css",
+      "status": "functional-local-matrix",
+      "checks": [
+        "WebGL",
+        "viewport",
+        "touch targets",
+        "local storage",
+        "fullscreen",
+        "PWA",
+        "runtime metrics",
+        "visual",
+        "touch",
+        "readability",
+        "orientation",
+        "temperature",
+        "battery"
+      ],
+      "exports": [
+        "JSON",
+        "CSV"
+      ],
+      "privacy": "local-only"
+    },
+    "pedagogy-accessibility": {
+      "guideModule": "js/pedagogy/guided-learning.js",
+      "validationModule": "js/pedagogy/usage-validation.js",
+      "style": "css/pedagogy.css",
+      "standard": "assets/pedagogy-standard.json",
+      "status": "functional-local-guided-learning",
+      "routes": 10,
+      "checkpointsPerRoute": 4,
+      "features": [
+        "interactive tutorial",
+        "compact objective HUD",
+        "automatic checkpoints",
+        "manual analysis checkpoint",
+        "active time",
+        "local resume",
+        "written conclusion",
+        "JSON evidence export",
+        "simplified instructions",
+        "large touch targets",
+        "strong keyboard focus",
+        "persistent labels",
+        "laboratory by quality profile validation matrix"
+      ],
+      "privacy": "local-only"
+    },
+    "stability-recovery": {
+      "status": "functional-recovery-layer",
+      "module": "js/stability.js",
+      "style": "css/stability-recovery.css",
+      "features": [
+        "safe 2D mode",
+        "route objective brief",
+        "runtime error center",
+        "multi-source Three loader",
+        "WebGL1 fallback",
+        "async route cleanup",
+        "simplified laboratory hub",
+        "robust service worker"
+      ]
+    },
+    "ux-ui-reorganization": {
+      "status": "functional-shared-workspace",
+      "catalog": "js/labs/lab-catalog.js",
+      "workspace": "js/ui/experience-workspace.js",
+      "style": "css/experience-workspace.css",
+      "audit": "assets/ux-audit.json",
+      "routes": 8,
+      "views": [
+        "overview",
+        "scene",
+        "controls",
+        "results",
+        "support"
+      ],
+      "modes": [
+        "guided",
+        "explore",
+        "presentation"
+      ],
+      "features": [
+        "centralized laboratory metadata",
+        "consistent objective and scenario selector",
+        "progressive disclosure",
+        "scene-first mobile layout",
+        "organized live results",
+        "shared laboratory hub"
+      ]
+    },
+    "r4-reconstruction": {
+      "status": "functional-guided-reconstruction",
+      "scope": [
+        "waves",
+        "thermal",
+        "advanced"
+      ],
+      "guide": "js/ui/r4-guided-labs.js",
+      "style": "css/r4-reconstructed-labs.css",
+      "contract": "assets/r4-core-labs.json",
+      "features": [
+        "guided comparison presets",
+        "explicit model confidence",
+        "three-step investigations",
+        "contextual thermal readouts",
+        "pause and restart for advanced physics",
+        "mobile scene-first layout"
+      ]
+    },
+    "r5-playtest": {
+      "status": "browser-smoke-approved-force-2d",
+      "scope": [
+        "routes",
+        "workspace-views",
+        "scenario-selectors",
+        "restart-controls",
+        "rapid-route-cleanup",
+        "desktop",
+        "mobile"
+      ],
+      "report": "validation/r5-browser-smoke.json",
+      "screenshots": "validation/screenshots",
+      "webglHardwareValidation": "pending"
+    },
+    "webgl-pilot": {
+      "status": "functional-software-pilot",
+      "contract": "assets/r6-webgl-pilot.json",
+      "preflight": "js/render/webgl-preflight.js",
+      "watchdog": "js/render/render-watchdog.js",
+      "testTool": "tools/webgl_pilot_test.py",
+      "report": "validation/r6-webgl-pilot.json",
+      "physicalGpuValidation": "pending"
+    }
+  }
+}

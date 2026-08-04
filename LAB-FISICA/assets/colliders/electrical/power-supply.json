@@ -1,0 +1,19 @@
+{
+  "asset": "power-supply",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        1.55,
+        0.86,
+        1.15
+      ],
+      "position": [
+        0,
+        0.48,
+        0
+      ]
+    }
+  ]
+}

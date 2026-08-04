@@ -1,0 +1,19 @@
+{
+  "asset": "resistor-module",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        1.45,
+        0.7,
+        0.8
+      ],
+      "position": [
+        0,
+        0.35,
+        0
+      ]
+    }
+  ]
+}

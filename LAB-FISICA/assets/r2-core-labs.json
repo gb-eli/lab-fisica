@@ -1,0 +1,27 @@
+{
+  "version": "0.4.1",
+  "phase": "R2",
+  "scope": ["hall", "coulomb", "ohm"],
+  "principle": "onde estou, o que faço, qual controle altero e qual resultado observo",
+  "hall": {
+    "primaryAction": "coulomb",
+    "recommendedPath": ["coulomb", "ohm", "magnetism"],
+    "compactLabelsInGuidedMode": true,
+    "textNavigationFallback": true
+  },
+  "electrostatics": {
+    "rendering": ["threejs", "canvas2d"],
+    "presets": ["attraction", "repulsion", "asymmetric"],
+    "draggableObjects": ["q1", "q2", "probe"],
+    "visualLayers": ["force", "electric-field", "potential"],
+    "camera360": true
+  },
+  "electricity": {
+    "guidedTemplates": ["series", "parallel", "mixed"],
+    "safeVoltagePresets": [6, 12, 18],
+    "safeStart": true,
+    "advancedToolsPreserved": true,
+    "question": "Como a topologia altera corrente, tensão e potência?"
+  },
+  "realDeviceValidation": "pending"
+}

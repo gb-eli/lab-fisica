@@ -1,0 +1,19 @@
+{
+  "asset": "voltmeter",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        1.02,
+        0.72,
+        0.38
+      ],
+      "position": [
+        0,
+        0.38,
+        0
+      ]
+    }
+  ]
+}

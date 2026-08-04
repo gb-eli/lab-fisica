@@ -1,0 +1,51 @@
+{
+  "version": "0.4.5",
+  "phase": "R6",
+  "title": "Piloto WebGL e correções por evidência",
+  "status": "functional-software-webgl-pilot",
+  "scope": [
+    "context creation",
+    "shader compilation",
+    "frame drawing",
+    "pixel readback",
+    "resize",
+    "context loss and restoration",
+    "first-frame watchdog",
+    "safe 3D tier"
+  ],
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "webglVersion": 2,
+      "tier": "minimal",
+      "drawPassed": true,
+      "recoveryRestored": true
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "webglVersion": 2,
+      "tier": "minimal",
+      "drawPassed": true,
+      "recoveryRestored": true
+    }
+  ],
+  "limitations": [
+    "SwiftShader software rendering is not physical GPU validation",
+    "complete local Three.js package is still pending",
+    "Hall/Coulomb/Ohm WebGL scenes require hardware playtest"
+  ],
+  "files": [
+    "js/render/webgl-preflight.js",
+    "js/render/render-watchdog.js",
+    "tools/webgl_pilot_test.py",
+    "validation/r6-webgl-pilot.json"
+  ]
+}
