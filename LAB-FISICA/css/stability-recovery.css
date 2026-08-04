@@ -1,0 +1,144 @@
+/* Fase de recuperação estrutural v0.4.0 */
+.route-brief {
+  position: relative;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid rgba(var(--module-accent-rgb), .28);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(5, 12, 23, .96), rgba(var(--module-accent-rgb), .08));
+  box-shadow: 0 12px 38px rgba(0, 0, 0, .18);
+}
+.route-brief__main { min-width: 0; }
+.route-brief__main > span { display: block; color: var(--module-accent); font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.route-brief__main > strong { display: block; margin-top: 3px; font-size: clamp(.92rem, 1.6vw, 1.08rem); line-height: 1.35; }
+.route-brief__main ol { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 7px 0 0; padding: 0; list-style-position: inside; color: var(--muted, #aab8c9); font-size: .78rem; }
+.route-brief__status { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; max-width: 480px; }
+.route-brief__status button,
+.route-brief__status > span { min-height: 36px; padding: 7px 10px; border-radius: 10px; font-size: .76rem; }
+.route-brief__status > span { display: inline-flex; align-items: center; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.05); white-space: nowrap; }
+.route-brief__status > span[data-state="ready"] { color: #81f5bf; border-color: rgba(80, 231, 165, .35); }
+.route-brief__status > span[data-state="fallback"] { color: #ffd285; border-color: rgba(255, 190, 92, .35); }
+.route-brief__status > span[data-state="error"] { color: #ff9c9c; border-color: rgba(255, 104, 104, .4); }
+.route-brief__controls { grid-column: 1 / -1; margin: 0; padding: 9px 11px; border-radius: 10px; background: rgba(255,255,255,.045); color: var(--muted, #aab8c9); font-size: .82rem; }
+
+.stability-center {
+  position: fixed;
+  z-index: 10000;
+  left: max(12px, env(safe-area-inset-left));
+  right: max(12px, env(safe-area-inset-right));
+  bottom: calc(78px + env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  max-width: 980px;
+  margin-inline: auto;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 126, 126, .4);
+  border-radius: 16px;
+  background: rgba(24, 8, 13, .97);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .48);
+}
+.stability-center[hidden] { display: none; }
+.stability-center__copy { display: grid; gap: 2px; min-width: 0; }
+.stability-center__copy strong { color: #ffb0b0; }
+.stability-center__copy span { color: #f4dfe3; font-size: .84rem; overflow-wrap: anywhere; }
+.stability-center__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+.stability-center__actions button { min-height: 36px; padding: 7px 10px; border-radius: 9px; font-size: .76rem; }
+.stability-dialog pre { max-height: 52vh; overflow: auto; padding: 12px; border-radius: 12px; background: #02050a; white-space: pre-wrap; overflow-wrap: anywhere; }
+.stability-dialog__actions { display: flex; justify-content: flex-end; gap: 8px; }
+
+.boot-error {
+  display: grid;
+  gap: 10px;
+  width: min(560px, calc(100vw - 30px));
+  padding: 20px;
+  border: 1px solid rgba(255, 115, 115, .35);
+  border-radius: 18px;
+  background: rgba(16, 5, 10, .96);
+  text-align: left;
+}
+.boot-error h1, .boot-error p { margin: 0; }
+.boot-error__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* Navegação reduzida: os laboratórios especializados ficam no hub. */
+.dock__item[data-route="magnetism"],
+.dock__item[data-route="energy"],
+.dock__item[data-route="mechanics"],
+.dock__item[data-route="waves"],
+.dock__item[data-route="thermal"],
+.dock__item[data-route="advanced"] { display: none; }
+.dock { grid-template-columns: repeat(5, minmax(58px, 1fr)); max-width: 660px; }
+
+.lab-hub { display: grid; gap: 18px; padding-bottom: 24px; }
+.lab-hub__head { display: grid; gap: 8px; max-width: 880px; }
+.lab-hub__head h1, .lab-hub__head p { margin: 0; }
+.lab-hub__filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.lab-hub__filters button[aria-pressed="true"] { border-color: var(--module-accent); color: var(--module-accent); }
+.lab-hub__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+.lab-launch-card { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; min-height: 190px; padding: 16px; border: 1px solid rgba(255,255,255,.1); border-radius: 17px; background: rgba(8, 15, 27, .9); }
+.lab-launch-card__icon { display: grid; place-items: center; width: 46px; aspect-ratio: 1; border-radius: 14px; background: rgba(var(--module-accent-rgb), .12); color: var(--module-accent); }
+.lab-launch-card__body { display: grid; gap: 7px; min-width: 0; }
+.lab-launch-card__body h2, .lab-launch-card__body p { margin: 0; }
+.lab-launch-card__body h2 { font-size: 1rem; }
+.lab-launch-card__body p { color: var(--muted, #aab8c9); font-size: .82rem; line-height: 1.45; }
+.lab-launch-card__steps { display: flex; flex-wrap: wrap; gap: 5px; }
+.lab-launch-card__steps span { padding: 4px 7px; border-radius: 999px; background: rgba(255,255,255,.055); color: #c8d3e2; font-size: .68rem; }
+.lab-launch-card__actions { display: flex; gap: 7px; margin-top: auto; }
+.lab-launch-card__actions button { min-height: 38px; }
+
+/* Cabeçalhos antigos continuam disponíveis, mas deixam de competir com o objetivo principal. */
+.view > .route-brief + section > header,
+.view > .route-brief + section .module-head,
+.view > .route-brief + section .energy-head,
+.view > .route-brief + section .mechanics-head,
+.view > .route-brief + section .magnetism-head,
+.view > .route-brief + section .waves-head,
+.view > .route-brief + section .thermal-head,
+.view > .route-brief + section .advanced-premium__head {
+  margin-top: 0;
+}
+
+.force-2d [class$="-webgl"],
+.force-2d .physics-webgl { display: none !important; }
+
+@media (max-width: 900px) {
+  .route-brief { grid-template-columns: 1fr; }
+  .route-brief__status { justify-content: flex-start; max-width: none; }
+  .stability-center { align-items: flex-start; flex-direction: column; }
+  .stability-center__actions { justify-content: flex-start; }
+}
+
+@media (max-width: 640px) {
+  .topbar__context { display: none; }
+  .topbar__actions #btn-help,
+  .topbar__actions #btn-quality { display: none; }
+  .route-brief { margin-inline: -4px; padding: 10px; border-radius: 13px; }
+  .route-brief__main ol { display: grid; gap: 4px; }
+  .route-brief__status { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+  .route-brief__status > span { grid-column: 1 / -1; justify-content: center; }
+  .route-brief__status button { width: 100%; }
+  .lab-hub__grid { grid-template-columns: 1fr; }
+  .lab-launch-card { min-height: 0; padding: 13px; }
+}
+
+/* Hall recuperado: uma decisão principal, sem painéis concorrentes. */
+.hall--recovered .hall-stage { min-height: min(72vh, 760px); }
+.hall-side--recovered { gap: .85rem; }
+.hall-side--recovered .glass-card { padding: 1rem; }
+.hall-side--recovered h1 { margin: .45rem 0; font-size: clamp(1.35rem, 2.5vw, 2rem); }
+.hall-direct-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .55rem; }
+.hall-direct-list button { min-height: 58px; display:flex; align-items:center; gap:.6rem; text-align:left; }
+.hall-direct-list small { display:block; opacity:.72; font-size:.72rem; }
+.hall--recovered .hall-view-controls button[hidden] { display:none !important; }
+@media (max-width: 860px) {
+  .hall--recovered { display:block; }
+  .hall--recovered .hall-stage { min-height: 58vh; }
+  .hall-direct-list { grid-template-columns: 1fr; }
+  .hall-side--recovered { margin-top:.8rem; }
+}
