@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-04T12:15:25.344471+00:00",
+  "version": "0.4.4",
+  "mode": "browser-smoke-force-2d",
+  "scope": "DOM, rotas, controles, limpeza, fallback 2D e responsividade. WebGL não validado.",
+  "profiles": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "routes": [
+        {
+          "route": "hall",
+          "title": "Onde você quer começar?",
+          "routeErrorCount": 0,
+          "viewSwitches": {},
+          "scenarioChanged": null,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "coulomb",
+          "title": "Eletrostática 360°",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": null,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "ohm",
+          "title": "Eletricidade e Circuitos 360°",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "magnetism",
+          "title": "Eletromagnetismo e Máquinas 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "energy",
+          "title": "Casa Elétrica, Microgeração e Rede 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "mechanics",
+          "title": "Mecânica, Gravidade e Dinâmica 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "waves",
+          "title": "Ondas, Som e Óptica 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "thermal",
+          "title": "Termologia, Gases e Fluidos 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "advanced",
+          "title": "Física Avançada 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        },
+        {
+          "route": "roadmap",
+          "title": "Escolha pelo conteúdo e pela pergunta que deseja investigar",
+          "routeErrorCount": 0,
+          "viewSwitches": {},
+          "scenarioChanged": null,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 1365,
+          "viewportWidth": 1365
+        }
+      ],
+      "settingsDialogOpened": true,
+      "runtimeMessages": [],
+      "passed": true
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "routes": [
+        {
+          "route": "hall",
+          "title": "Onde você quer começar?",
+          "routeErrorCount": 0,
+          "viewSwitches": {},
+          "scenarioChanged": null,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "coulomb",
+          "title": "Eletrostática 360°",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": null,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "ohm",
+          "title": "Eletricidade e Circuitos 360°",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "magnetism",
+          "title": "Eletromagnetismo e Máquinas 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "energy",
+          "title": "Casa Elétrica, Microgeração e Rede 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "mechanics",
+          "title": "Mecânica, Gravidade e Dinâmica 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "waves",
+          "title": "Ondas, Som e Óptica 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "thermal",
+          "title": "Termologia, Gases e Fluidos 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": true,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "advanced",
+          "title": "Física Avançada 360",
+          "routeErrorCount": 0,
+          "viewSwitches": {
+            "overview": true,
+            "scene": true,
+            "controls": true,
+            "results": true,
+            "support": true
+          },
+          "scenarioChanged": true,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        },
+        {
+          "route": "roadmap",
+          "title": "Escolha pelo conteúdo e pela pergunta que deseja investigar",
+          "routeErrorCount": 0,
+          "viewSwitches": {},
+          "scenarioChanged": null,
+          "restartClicked": false,
+          "horizontalOverflow": [],
+          "bodyScrollWidth": 390,
+          "viewportWidth": 390
+        }
+      ],
+      "settingsDialogOpened": true,
+      "runtimeMessages": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
