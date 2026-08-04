@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import { readFile, access } from 'node:fs/promises';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const project=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const required=['js/science/energy-grid.js','js/modules/energy.js','js/modules/energy3d.js','css/energy-lab.css','docs/ENERGIA_CASA_REDE_PREMIUM_360.md'];
+await Promise.all(required.map(file=>access(resolve(project,file))));
+const ui=await readFile(resolve(project,'js/modules/energy.js'),'utf8');const scene=await readFile(resolve(project,'js/modules/energy3d.js'),'utf8');const css=await readFile(resolve(project,'css/energy-lab.css'),'utf8');
+assert.match(ui,/Casa Elétrica, Microgeração e Rede 360/);assert.match(ui,/data-energy-mode/);assert.match(ui,/house:/);assert.match(ui,/microgrid/);assert.match(ui,/network/);assert.match(ui,/Exportar evidência/);
+for(const name of ['createHouseMode','createProtectionMode','createMicrogridMode','createNetworkMode'])assert.match(scene,new RegExp(name));
+assert.match(scene,/solarPanel/);assert.match(scene,/turbine/);assert.match(scene,/householdEnergyState/);assert.match(scene,/distributionState/);assert.match(css,/energy-stage/);assert.match(css,/@media\(max-width:720px\)/);
+console.log('✓ Energia Premium 360: casa, proteção, microgeração, rede, mobile e fallback validados.');

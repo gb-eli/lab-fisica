@@ -1,0 +1,29 @@
+import assert from 'node:assert/strict';
+import { readFileSync, existsSync } from 'node:fs';
+import { R3_PRESETS } from '../js/ui/r3-guided-labs.js';
+const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
+for (const path of ['js/ui/r3-guided-labs.js','css/r3-reconstructed-labs.css','assets/r3-core-labs.json','docs/RECONSTRUCAO_R3_ELETROMAGNETISMO_ENERGIA_MECANICA.md','docs/RELATORIO_VALIDACAO_V0.4.2.md']) assert.ok(existsSync(new URL(`../${path}`, import.meta.url)), path);
+assert.equal(R3_PRESETS.magnetism.length, 10);
+assert.equal(R3_PRESETS.energy.length, 8);
+assert.equal(R3_PRESETS.mechanics.length, 10);
+for (const lab of Object.values(R3_PRESETS)) for (const preset of lab) {
+  assert.equal(preset.steps.length, 3);
+  assert.ok(preset.question.length > 20);
+  assert.ok(preset.observe.length > 15);
+}
+const energy = read('js/modules/energy.js');
+assert.match(energy, /mode==='network'/);
+assert.match(energy, /data-energy-play/);
+assert.match(energy, /data-energy-restart/);
+const magnetism = read('js/modules/magnetism.js');
+assert.match(magnetism, /data-mag-play/);
+assert.match(magnetism, /data-mag-readout-label/);
+const mechanics = read('js/modules/mechanics.js');
+assert.match(mechanics, /data-mechanics-readout-label/);
+const sw = read('sw.js');
+assert.match(sw, /r3-guided-labs\.js/);
+assert.match(sw, /r3-reconstructed-labs\.css/);
+const contract = JSON.parse(read('assets/r3-core-labs.json'));
+assert.equal(contract.version, '0.4.3');
+assert.deepEqual(contract.scope, ['magnetism','energy','mechanics']);
+console.log('✓ R3 v0.4.2: cenários guiados, leituras contextuais, pausa, reinício e correções de Energia validados.');
