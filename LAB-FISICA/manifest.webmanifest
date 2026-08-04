@@ -1,0 +1,11 @@
+{
+  "name": "Física Imersiva 360",
+  "short_name": "Física 360",
+  "description": "Laboratórios científicos interativos e modulares.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050912",
+  "theme_color": "#050912",
+  "orientation": "any",
+  "version": "0.4.5"
+}

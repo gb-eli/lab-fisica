@@ -1,0 +1,13 @@
+{
+  "name": "fisica-imersiva-360",
+  "version": "0.4.5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/electrostatics.test.mjs && node tests/electrical-instruments.test.mjs && node tests/resistive-network.test.mjs && node tests/advanced-frontier.test.mjs && node tests/advanced-physics.test.mjs && node tests/advanced-premium.test.mjs && node tests/design-system.test.mjs && node tests/render-core.test.mjs && node tests/assets-pipeline.test.mjs && node tests/hall-premium.test.mjs && node tests/interaction-system.test.mjs && node tests/electricity-premium.test.mjs && node tests/electromagnetism.test.mjs && node tests/magnetism-premium.test.mjs && node tests/energy-grid.test.mjs && node tests/energy-premium.test.mjs && node tests/mechanics.test.mjs && node tests/mechanics-premium.test.mjs && node tests/waves-optics.test.mjs && node tests/waves-premium.test.mjs && node tests/thermodynamics-fluids.test.mjs && node tests/thermal-premium.test.mjs && node tests/performance-optimization.test.mjs && node tests/artistic-refinement.test.mjs && node tests/device-validation.test.mjs && node tests/pedagogy-accessibility.test.mjs && node tests/recovery-stability.test.mjs && node tests/ux-workspace.test.mjs && node tests/r2-core-labs.test.mjs && node tests/r3-reconstruction.test.mjs && node tests/r4-reconstruction.test.mjs && node tests/static-integrity.test.mjs && node tests/r5-playtest.test.mjs && node tests/r6-webgl-pilot.test.mjs",
+    "audit:performance": "node tools/audit_performance.mjs",
+    "audit:ux": "node tools/audit_ux_structure.mjs",
+    "test:browser": "python3 tools/browser_smoke_test.py",
+    "test:webgl": "python3 tools/webgl_pilot_test.py"
+  }
+}
