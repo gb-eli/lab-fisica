@@ -1,0 +1,6 @@
+.device-validation{display:grid;gap:.7rem;margin-top:.8rem;padding:.8rem;border:1px solid color-mix(in srgb,var(--accent,#62dcff) 24%,transparent);border-radius:14px;background:rgba(3,11,18,.58)}
+.device-validation__head{display:flex;align-items:center;justify-content:space-between;gap:.5rem}.device-validation__head .status[data-state="aprovado"]{color:#6fffc1}.device-validation__head .status[data-state="com-ressalvas"]{color:#ffd36f}.device-validation__head .status[data-state="reprovado"]{color:#ff8d8d}
+.device-validation__manual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}.device-validation__manual label{font-size:.76rem}.device-validation__manual select{width:100%;margin-top:.25rem}
+.device-validation textarea{min-height:4.4rem;resize:vertical}.device-validation output{display:block;min-height:6rem;white-space:pre-wrap;font:500 .74rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--text-soft,#b9ced8);padding:.65rem;border-radius:10px;background:rgba(0,0,0,.24)}
+.device-validation__actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem}.device-validation__actions button{min-height:42px}.device-validation__history{font-size:.75rem;color:var(--text-soft,#b9ced8)}
+@media(max-width:640px){.device-validation__manual,.device-validation__actions{grid-template-columns:1fr}}

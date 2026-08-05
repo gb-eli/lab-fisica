@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0",
+  "generatedAt": "2026-08-05T00:29:16.690Z",
+  "strategy": "static-import-closure-plus-selected-home-route",
+  "initial": {
+    "threeJs": false,
+    "glb": false,
+    "laboratoryModules": false,
+    "jsModules": 15,
+    "jsBytes": 138206,
+    "cssFiles": 6,
+    "cssBytes": 72184,
+    "totalCodeBytes": 210390,
+    "modules": [
+      "js/app.js",
+      "js/design-system.js",
+      "js/labs/lab-catalog.js",
+      "js/labs/route-registry.js",
+      "js/labs/route-resource-manager.js",
+      "js/modules/home.js",
+      "js/pedagogy/guided-learning.js",
+      "js/pedagogy/usage-validation.js",
+      "js/quality.js",
+      "js/render/runtime-registry.js",
+      "js/router.js",
+      "js/session/student-session.js",
+      "js/stability.js",
+      "js/storage.js",
+      "js/ui/icons.js"
+    ],
+    "styles": [
+      "css/styles.css",
+      "css/design-system.css",
+      "css/portal-home.css",
+      "css/student-session.css",
+      "css/pedagogy.css",
+      "css/stability-recovery.css"
+    ]
+  },
+  "project": {
+    "jsFiles": 79,
+    "jsBytes": 897571,
+    "cssFiles": 22,
+    "cssBytes": 192837,
+    "glbFiles": 36,
+    "glbBytes": 827160
+  },
+  "ratios": {
+    "initialJsPercentOfProjectJs": 15.4,
+    "initialCssPercentOfProjectCss": 37.43
+  }
+}

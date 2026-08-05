@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "version": "0.4.6",
+  "generatedAt": "2026-08-04T16:42:59.578151+00:00",
+  "mode": "local-only",
+  "localVendorReady": false,
+  "routes": [
+    "hall",
+    "coulomb",
+    "ohm"
+  ],
+  "records": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "route": "hall",
+      "state": {
+        "isWebgl": false,
+        "fallback": false,
+        "navigationBlocked": true,
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:8788/index.html#hall\nCall log:\n  - navigating to \"http://127.0.0.1:8788/index.html#hall\", waiting until \"domcontentloaded\"\n"
+      },
+      "messages": []
+    },
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "route": "coulomb",
+      "state": {
+        "isWebgl": false,
+        "fallback": false,
+        "navigationBlocked": true,
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:8788/index.html#coulomb\nCall log:\n  - navigating to \"http://127.0.0.1:8788/index.html#coulomb\", waiting until \"domcontentloaded\"\n"
+      },
+      "messages": []
+    },
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "route": "ohm",
+      "state": {
+        "isWebgl": false,
+        "fallback": false,
+        "navigationBlocked": true,
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:8788/index.html#ohm\nCall log:\n  - navigating to \"http://127.0.0.1:8788/index.html#ohm\", waiting until \"domcontentloaded\"\n"
+      },
+      "messages": [
+        {
+          "type": "pageerror",
+          "text": "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+        },
+        {
+          "type": "pageerror",
+          "text": "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+        },
+        {
+          "type": "pageerror",
+          "text": "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+        }
+      ]
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "hall",
+      "state": {
+        "isWebgl": false,
+        "fallback": false,
+        "navigationBlocked": true,
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:8788/index.html#hall\nCall log:\n  - navigating to \"http://127.0.0.1:8788/index.html#hall\", waiting until \"domcontentloaded\"\n"
+      },
+      "messages": []
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "coulomb",
+      "state": {
+        "isWebgl": false,
+        "fallback": false,
+        "navigationBlocked": true,
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:8788/index.html#coulomb\nCall log:\n  - navigating to \"http://127.0.0.1:8788/index.html#coulomb\", waiting until \"domcontentloaded\"\n"
+      },
+      "messages": []
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "ohm",
+      "state": {
+        "isWebgl": false,
+        "fallback": false,
+        "navigationBlocked": true,
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:8788/index.html#ohm\nCall log:\n  - navigating to \"http://127.0.0.1:8788/index.html#ohm\", waiting until \"domcontentloaded\"\n"
+      },
+      "messages": [
+        {
+          "type": "pageerror",
+          "text": "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+        },
+        {
+          "type": "pageerror",
+          "text": "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+        },
+        {
+          "type": "pageerror",
+          "text": "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
+        }
+      ]
+    }
+  ],
+  "scenesReady": 0,
+  "expectedScenes": 6,
+  "passed": false,
+  "status": "blocked-navigation-policy"
+}

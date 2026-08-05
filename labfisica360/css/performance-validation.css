@@ -1,0 +1,16 @@
+.performance-audit{display:grid;gap:.65rem;margin-top:.75rem;padding:.8rem;border:1px solid color-mix(in srgb,var(--accent,#62dcff) 24%,transparent);border-radius:14px;background:rgba(3,11,18,.58)}
+.performance-audit__head,.performance-audit__actions{display:flex;align-items:center;justify-content:space-between;gap:.55rem;flex-wrap:wrap}
+.performance-audit output{display:block;min-height:5.5rem;white-space:pre-wrap;font:500 .76rem/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--text-soft,#b9ced8);padding:.65rem;border-radius:10px;background:rgba(0,0,0,.24)}
+.performance-audit__actions button{flex:1;min-width:9rem}
+.performance-audit .status[data-state="dentro-do-orcamento"]{color:#6fffc1}.performance-audit .status[data-state="requer-reducao"]{color:#ffd36f}
+.webgl-recovery{position:absolute;inset:0;z-index:60;display:grid;place-content:center;text-align:center;gap:.65rem;padding:1.2rem;background:rgba(2,7,12,.92);backdrop-filter:blur(10px);color:#dff8ff}
+.webgl-recovery[hidden]{display:none}.webgl-recovery p{max-width:34rem;margin:0;color:#a9c4cf}.webgl-recovery button{justify-self:center}
+.is-render-suspended canvas{filter:saturate(.78) brightness(.82)}
+.render-diagnostics[data-status="critical"]{border-color:#ff6f6f!important;color:#ffd7d7!important}.render-diagnostics[data-status="constrained"]{border-color:#ffd36f!important;color:#ffe9b0!important}
+@media(max-width:640px){.performance-audit__actions{display:grid;grid-template-columns:1fr}.performance-audit__actions button{width:100%}}
+.webgl-preflight-panel{border-color:color-mix(in srgb,#69e6ff 34%,transparent)}
+.webgl-preflight-panel .status[data-state="advanced"]{color:#75ffc7}
+.webgl-preflight-panel .status[data-state="balanced"]{color:#9fe8ff}
+.webgl-preflight-panel .status[data-state="minimal"]{color:#ffd36f}
+.webgl-preflight-panel .status[data-state="failed"]{color:#ff9c9c}
+.is-render-timeout canvas{display:none!important}

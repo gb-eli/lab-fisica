@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T00:30:38.117095+00:00",
+  "version": "0.4.9",
+  "mode": "virtual-origin-es-modules-force-2d",
+  "scope": "Portal inicial, imports dinâmicos, CSS por rota, limpeza de recursos, sessão e responsividade.",
+  "profiles": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "passed": true,
+      "initial": {
+        "requestCount": 21,
+        "resourceCount": 15,
+        "labModules": [],
+        "heavyAssets": [],
+        "webglCanvasCount": 0,
+        "routeStyleCount": 0
+      },
+      "coulomb": {
+        "loadedOnDemand": true,
+        "newRequests": [
+          "/css/experience-workspace.css",
+          "/css/artistic-refinement.css",
+          "/css/performance-validation.css",
+          "/css/r2-core-labs.css",
+          "/js/modules/coulomb.js",
+          "/js/science/electrostatics.js",
+          "/js/modules/coulomb3d.js",
+          "/js/render/runtime.js",
+          "/js/render/orbit-controller.js",
+          "/js/render/three-loader.js",
+          "/js/render/environment.js",
+          "/js/render/materials.js",
+          "/js/render/postfx.js",
+          "/js/render/performance-monitor.js",
+          "/js/render/adaptive-scene-optimizer.js",
+          "/js/render/dispose.js",
+          "/js/render/artistic-refinement.js",
+          "/js/render/webgl-preflight.js",
+          "/js/render/render-watchdog.js",
+          "/js/ui/experience-workspace.js"
+        ],
+        "routeStyles": [
+          "/css/experience-workspace.css",
+          "/css/artistic-refinement.css",
+          "/css/performance-validation.css",
+          "/css/r2-core-labs.css"
+        ]
+      },
+      "ohm": {
+        "loadedOnDemand": true,
+        "newRequestCount": 18
+      },
+      "cleanup": {
+        "stylesAfterHome": 0,
+        "canvasesAfterHome": 0,
+        "activeRoute": "home",
+        "releaseEntries": [
+          {
+            "route": "home",
+            "unloadedAt": "2026-08-05T00:30:31.668Z",
+            "cleanupMs": 51,
+            "activeRuntimes": 0,
+            "stylesRemaining": 0,
+            "memoryAfterCleanup": {
+              "usedJSHeapSize": 10000000,
+              "totalJSHeapSize": 10000000,
+              "jsHeapSizeLimit": 2330000000
+            }
+          },
+          {
+            "route": "coulomb",
+            "unloadedAt": "2026-08-05T00:30:32.687Z",
+            "cleanupMs": 54,
+            "activeRuntimes": 0,
+            "stylesRemaining": 0,
+            "memoryAfterCleanup": {
+              "usedJSHeapSize": 10000000,
+              "totalJSHeapSize": 10000000,
+              "jsHeapSizeLimit": 2330000000
+            }
+          }
+        ]
+      },
+      "session": {
+        "loggedIn": true,
+        "profile": {
+          "name": "Estudante Teste",
+          "className": "2DS A",
+          "shift": "manha",
+          "createdAt": "2026-08-05T00:30:31.076Z",
+          "pinHash": null
+        },
+        "trackedRoutes": [
+          "coulomb",
+          "home",
+          "ohm"
+        ],
+        "labActiveSeconds": 1.72
+      },
+      "issues": [],
+      "browserErrors": [],
+      "horizontalOverflow": []
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "initial": {
+        "requestCount": 21,
+        "resourceCount": 15,
+        "labModules": [],
+        "heavyAssets": [],
+        "webglCanvasCount": 0,
+        "routeStyleCount": 0
+      },
+      "coulomb": {
+        "loadedOnDemand": true,
+        "newRequests": [
+          "/css/experience-workspace.css",
+          "/css/artistic-refinement.css",
+          "/css/performance-validation.css",
+          "/css/r2-core-labs.css",
+          "/js/modules/coulomb.js",
+          "/js/science/electrostatics.js",
+          "/js/modules/coulomb3d.js",
+          "/js/render/runtime.js",
+          "/js/render/orbit-controller.js",
+          "/js/render/three-loader.js",
+          "/js/render/environment.js",
+          "/js/render/materials.js",
+          "/js/render/postfx.js",
+          "/js/render/performance-monitor.js",
+          "/js/render/adaptive-scene-optimizer.js",
+          "/js/render/dispose.js",
+          "/js/render/artistic-refinement.js",
+          "/js/render/webgl-preflight.js",
+          "/js/render/render-watchdog.js",
+          "/js/ui/experience-workspace.js"
+        ],
+        "routeStyles": [
+          "/css/experience-workspace.css",
+          "/css/artistic-refinement.css",
+          "/css/performance-validation.css",
+          "/css/r2-core-labs.css"
+        ]
+      },
+      "ohm": {
+        "loadedOnDemand": true,
+        "newRequestCount": 18
+      },
+      "cleanup": {
+        "stylesAfterHome": 0,
+        "canvasesAfterHome": 0,
+        "activeRoute": "home",
+        "releaseEntries": [
+          {
+            "route": "home",
+            "unloadedAt": "2026-08-05T00:30:35.860Z",
+            "cleanupMs": 25,
+            "activeRuntimes": 0,
+            "stylesRemaining": 0,
+            "memoryAfterCleanup": {
+              "usedJSHeapSize": 10000000,
+              "totalJSHeapSize": 10000000,
+              "jsHeapSizeLimit": 2330000000
+            }
+          },
+          {
+            "route": "coulomb",
+            "unloadedAt": "2026-08-05T00:30:36.527Z",
+            "cleanupMs": 25,
+            "activeRuntimes": 0,
+            "stylesRemaining": 0,
+            "memoryAfterCleanup": {
+              "usedJSHeapSize": 10000000,
+              "totalJSHeapSize": 10000000,
+              "jsHeapSizeLimit": 2330000000
+            }
+          }
+        ]
+      },
+      "session": {
+        "loggedIn": true,
+        "profile": {
+          "name": "Estudante Teste",
+          "className": "2DS A",
+          "shift": "manha",
+          "createdAt": "2026-08-05T00:30:35.386Z",
+          "pinHash": null
+        },
+        "trackedRoutes": [
+          "coulomb",
+          "home",
+          "ohm"
+        ],
+        "labActiveSeconds": 1.25
+      },
+      "issues": [],
+      "browserErrors": [],
+      "horizontalOverflow": []
+    }
+  ],
+  "passed": true
+}

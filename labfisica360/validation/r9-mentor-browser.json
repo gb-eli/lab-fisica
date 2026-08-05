@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "version": "0.5.0",
+  "generatedAt": "2026-08-04T20:39:17.861726+00:00",
+  "scope": "Seis mentores, expansão para Termofluidos e Eletromagnetismo, destaques, progressão, sessão, modo livre e mobile.",
+  "profiles": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1365,
+        "height": 768
+      },
+      "mentor": "curie",
+      "route": "thermal",
+      "passed": true,
+      "initialMentorRequests": [],
+      "mentorRequests": [
+        "/css/mentor-guided.css",
+        "/js/mentors/mentor-controller.js",
+        "/js/mentors/mentor-catalog.js",
+        "/js/mentors/tracks/core-tracks.js",
+        "/js/mentors/highlight-engine.js",
+        "/js/mentors/step-validator.js",
+        "/js/mentors/tracks/foundation-tracks.js",
+        "/js/mentors/tracks/expansion-tracks.js",
+        "/js/mentors/tracks/step-builders.js"
+      ],
+      "mentorCards": 6,
+      "routeItems": 5,
+      "highlighted": [
+        true,
+        true,
+        true
+      ],
+      "completed": true,
+      "sessionMentorEvents": 5,
+      "freeMode": true,
+      "hudHidden": true,
+      "overflowOk": true,
+      "errors": []
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mentor": "tesla",
+      "route": "magnetism",
+      "passed": true,
+      "initialMentorRequests": [],
+      "mentorRequests": [
+        "/css/mentor-guided.css",
+        "/js/mentors/mentor-controller.js",
+        "/js/mentors/mentor-catalog.js",
+        "/js/mentors/tracks/core-tracks.js",
+        "/js/mentors/highlight-engine.js",
+        "/js/mentors/step-validator.js",
+        "/js/mentors/tracks/foundation-tracks.js",
+        "/js/mentors/tracks/expansion-tracks.js",
+        "/js/mentors/tracks/step-builders.js"
+      ],
+      "mentorCards": 6,
+      "routeItems": 5,
+      "highlighted": [
+        true,
+        true,
+        true
+      ],
+      "completed": true,
+      "sessionMentorEvents": 6,
+      "freeMode": true,
+      "hudHidden": true,
+      "overflowOk": true,
+      "errors": []
+    }
+  ],
+  "passed": true
+}
