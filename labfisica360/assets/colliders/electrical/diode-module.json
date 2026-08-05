@@ -1,0 +1,19 @@
+{
+  "asset": "diode-module",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        1.05,
+        0.62,
+        0.55
+      ],
+      "position": [
+        0,
+        0.31,
+        0
+      ]
+    }
+  ]
+}

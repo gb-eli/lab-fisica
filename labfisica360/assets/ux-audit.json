@@ -1,0 +1,162 @@
+{
+  "version": "0.4.7",
+  "generatedAt": "2026-08-04T10:57:31.168Z",
+  "scope": "Contagens estáticas nos templates-fonte; não representam necessariamente todos os elementos simultaneamente visíveis.",
+  "totals": {
+    "bytes": 247974,
+    "templateButtons": 115,
+    "templateInputs": 154,
+    "templateSelects": 20,
+    "templateCards": 47
+  },
+  "modules": {
+    "hall": {
+      "bytes": 8892,
+      "templateButtons": 18,
+      "templateInputs": 0,
+      "templateSelects": 0,
+      "templateCards": 4,
+      "modeSelectors": 0,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "coulomb": {
+      "bytes": 24695,
+      "templateButtons": 13,
+      "templateInputs": 3,
+      "templateSelects": 0,
+      "templateCards": 5,
+      "modeSelectors": 0,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "ohm": {
+      "bytes": 66530,
+      "templateButtons": 35,
+      "templateInputs": 8,
+      "templateSelects": 6,
+      "templateCards": 15,
+      "modeSelectors": 0,
+      "threeMounts": 0,
+      "asyncErrorHandlers": 1
+    },
+    "magnetism": {
+      "bytes": 23996,
+      "templateButtons": 8,
+      "templateInputs": 21,
+      "templateSelects": 2,
+      "templateCards": 4,
+      "modeSelectors": 5,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "energy": {
+      "bytes": 17518,
+      "templateButtons": 8,
+      "templateInputs": 16,
+      "templateSelects": 1,
+      "templateCards": 4,
+      "modeSelectors": 5,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "mechanics": {
+      "bytes": 24025,
+      "templateButtons": 8,
+      "templateInputs": 24,
+      "templateSelects": 3,
+      "templateCards": 4,
+      "modeSelectors": 5,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "waves": {
+      "bytes": 29796,
+      "templateButtons": 9,
+      "templateInputs": 36,
+      "templateSelects": 5,
+      "templateCards": 3,
+      "modeSelectors": 4,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "thermal": {
+      "bytes": 29916,
+      "templateButtons": 8,
+      "templateInputs": 42,
+      "templateSelects": 3,
+      "templateCards": 4,
+      "modeSelectors": 5,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    },
+    "advanced": {
+      "bytes": 22606,
+      "templateButtons": 8,
+      "templateInputs": 4,
+      "templateSelects": 0,
+      "templateCards": 4,
+      "modeSelectors": 4,
+      "threeMounts": 1,
+      "asyncErrorHandlers": 1
+    }
+  },
+  "findings": [
+    {
+      "priority": "P0",
+      "area": "3D e offline",
+      "issue": "O pacote local completo do Three.js ainda não está presente.",
+      "effect": "O primeiro carregamento 3D pode depender da rede; o modo 2D é obrigatório como recuperação.",
+      "status": "pending-external-runtime-bundle"
+    },
+    {
+      "priority": "P0",
+      "area": "Validação visual",
+      "issue": "O navegador automatizado do ambiente bloqueia a navegação local.",
+      "effect": "Sombras, sobreposições e gestos precisam de playtest em hardware real.",
+      "status": "pending-real-device-playtest"
+    },
+    {
+      "priority": "P1",
+      "area": "Arquitetura da informação",
+      "issue": "Metadados e objetivos eram duplicados em diferentes módulos.",
+      "effect": "Nomes e orientações podiam divergir.",
+      "status": "fixed-central-lab-catalog"
+    },
+    {
+      "priority": "P1",
+      "area": "Controles",
+      "issue": "Cada laboratório organizava controles e resultados de forma diferente.",
+      "effect": "Alta carga cognitiva e dificuldade para localizar ações.",
+      "status": "fixed-shared-experience-workspace"
+    },
+    {
+      "priority": "P1",
+      "area": "Bancada elétrica",
+      "issue": "Ferramentas avançadas disputavam atenção com o experimento principal.",
+      "effect": "O aluno podia manipular objetos antes de compreender o circuito.",
+      "status": "fixed-guided-progressive-disclosure"
+    },
+    {
+      "priority": "P1",
+      "area": "Mobile",
+      "issue": "Cena e painéis apareciam juntos em telas estreitas.",
+      "effect": "Pouca área útil para 3D e rolagem longa.",
+      "status": "fixed-scene-first-mobile-tabs"
+    },
+    {
+      "priority": "P2",
+      "area": "Cenários e objetos",
+      "issue": "A linguagem visual procedural ainda varia entre os laboratórios.",
+      "effect": "Qualidade e escala percebidas são inconsistentes.",
+      "status": "planned-lab-by-lab-art-pass"
+    },
+    {
+      "priority": "P2",
+      "area": "Lógica dos módulos",
+      "issue": "Alguns módulos concentram interface, estado, solver e renderização no mesmo arquivo.",
+      "effect": "Maior risco de regressão e manutenção difícil.",
+      "status": "planned-modular-decomposition"
+    }
+  ]
+}

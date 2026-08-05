@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "version": "0.5.0",
+  "phase": "R9.2",
+  "title": "Expansão dos Mentores Históricos e das Trilhas",
+  "defaultMode": "free",
+  "loadPolicy": "on-user-selection",
+  "disclaimer": "Trilhas inspiradas na obra e no contexto histórico; não simulam falas literais.",
+  "mentors": [
+    {
+      "id": "einstein",
+      "name": "Albert Einstein",
+      "routes": [
+        "mechanics",
+        "waves",
+        "energy",
+        "advanced",
+        "coulomb"
+      ]
+    },
+    {
+      "id": "newton",
+      "name": "Isaac Newton",
+      "routes": [
+        "mechanics",
+        "energy",
+        "coulomb",
+        "thermal",
+        "advanced"
+      ]
+    },
+    {
+      "id": "faraday",
+      "name": "Michael Faraday",
+      "routes": [
+        "ohm",
+        "magnetism",
+        "energy",
+        "waves",
+        "coulomb"
+      ]
+    },
+    {
+      "id": "curie",
+      "name": "Marie Curie",
+      "routes": [
+        "thermal",
+        "energy",
+        "magnetism",
+        "advanced",
+        "waves"
+      ]
+    },
+    {
+      "id": "tesla",
+      "name": "Nikola Tesla",
+      "routes": [
+        "ohm",
+        "magnetism",
+        "energy",
+        "waves",
+        "advanced"
+      ]
+    },
+    {
+      "id": "galileo",
+      "name": "Galileu Galilei",
+      "routes": [
+        "mechanics",
+        "waves",
+        "thermal",
+        "energy",
+        "advanced"
+      ]
+    }
+  ],
+  "coverage": {
+    "mentors": 6,
+    "catalogRoutes": 8,
+    "orderedRoutesPerMentor": 5,
+    "tracks": 33,
+    "steps": 138,
+    "targetSelectorsValidated": 138
+  },
+  "modules": {
+    "catalog": "js/mentors/mentor-catalog.js",
+    "controller": "js/mentors/mentor-controller.js",
+    "foundationTracks": "js/mentors/tracks/foundation-tracks.js",
+    "expansionTracks": "js/mentors/tracks/expansion-tracks.js",
+    "aggregator": "js/mentors/tracks/core-tracks.js",
+    "stepBuilders": "js/mentors/tracks/step-builders.js"
+  },
+  "requirements": {
+    "highlightUsesMoreThanColor": true,
+    "reducedMotionSupported": true,
+    "keyboardFocus": true,
+    "automaticValidationEvents": [
+      "click",
+      "input",
+      "change"
+    ],
+    "manualObservationCheckpoint": true,
+    "localPersistence": true,
+    "studentSessionIntegration": true,
+    "networkTransmission": false,
+    "mentorAssetsInInitialShell": false,
+    "historicalAttributionGuard": true
+  },
+  "acceptance": {
+    "desktopAndMobile": true,
+    "noHorizontalOverflow": true,
+    "mentorPanelAvoidsTarget": true,
+    "freeModeDisablesHud": true,
+    "routesSupported": 8,
+    "mentorsSupported": 6,
+    "newMentors": [
+      "curie",
+      "tesla",
+      "galileo"
+    ],
+    "newLaboratories": [
+      "magnetism",
+      "energy",
+      "waves",
+      "thermal",
+      "advanced"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version": "0.4.3",
+  "phase": "R3",
+  "scope": [
+    "magnetism",
+    "energy",
+    "mechanics"
+  ],
+  "principle": "uma pergunta, um cenário de referência, uma variável por vez e um resultado prioritário",
+  "magnetism": {
+    "modes": 6,
+    "guidedPresets": 10,
+    "pauseAndRestart": true,
+    "contextualReadoutLabels": true
+  },
+  "energy": {
+    "modes": 4,
+    "guidedPresets": 8,
+    "networkReadoutsCorrected": true,
+    "pauseAndRestart": true
+  },
+  "mechanics": {
+    "modes": 5,
+    "guidedPresets": 10,
+    "contextualReadoutLabels": true,
+    "restartReferenceScenario": true
+  },
+  "mobile": {
+    "guidedCardResponsive": true,
+    "scenePreserved": true,
+    "advancedControlsPreserved": true
+  },
+  "realDeviceValidation": "pending"
+}

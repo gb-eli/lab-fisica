@@ -1,0 +1,32 @@
+{
+  "asset": "workbench",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        4.8,
+        0.18,
+        2.15
+      ],
+      "position": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "shape": "box",
+      "size": [
+        4.8,
+        1.45,
+        0.12
+      ],
+      "position": [
+        0,
+        2.78,
+        -1
+      ]
+    }
+  ]
+}

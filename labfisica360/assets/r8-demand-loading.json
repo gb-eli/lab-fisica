@@ -1,0 +1,32 @@
+{
+  "version": "0.4.7",
+  "phase": "R8",
+  "status": "approved-modular-demand-loading",
+  "initialRoute": "home",
+  "initial3D": false,
+  "laboratories": 8,
+  "routes": 11,
+  "contracts": {
+    "dynamicImports": true,
+    "routeStyles": true,
+    "runtimeCleanup": true,
+    "progressiveCache": true,
+    "heavyPrecache": false,
+    "studentSession": true,
+    "sessionExports": ["json", "csv"]
+  },
+  "browserValidation": {
+    "profiles": ["1365x768", "390x844"],
+    "initialRequests": 21,
+    "initialLabModules": 0,
+    "initialHeavyAssets": 0,
+    "initialWebglCanvases": 0,
+    "activeRuntimesAfterExit": 0,
+    "passed": true
+  },
+  "limitations": [
+    "Three.js local completo pendente da R7B",
+    "sessão é identificação local, não autenticação de servidor",
+    "módulos ES já importados permanecem no cache interno até recarregar"
+  ]
+}

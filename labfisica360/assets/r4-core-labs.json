@@ -1,0 +1,37 @@
+{
+  "version": "0.4.3",
+  "phase": "R4",
+  "scope": [
+    "waves",
+    "thermal",
+    "advanced"
+  ],
+  "principle": "um cenário de referência, uma comparação controlada, leituras contextuais e limites do modelo explícitos",
+  "waves": {
+    "modes": 6,
+    "guidedPresets": 13,
+    "pauseAndRestart": true,
+    "modelConfidence": true,
+    "contextualReadouts": true
+  },
+  "thermal": {
+    "modes": 6,
+    "guidedPresets": 12,
+    "pauseAndRestart": true,
+    "contextualReadoutLabels": true,
+    "modelConfidence": true
+  },
+  "advanced": {
+    "modes": 5,
+    "guidedPresets": 10,
+    "pauseAndRestart": true,
+    "scientificVsDidacticWarnings": true,
+    "contextualReadouts": true
+  },
+  "mobile": {
+    "sceneFirst": true,
+    "compactGuidance": true,
+    "advancedControlsPreserved": true
+  },
+  "realDeviceValidation": "pending"
+}

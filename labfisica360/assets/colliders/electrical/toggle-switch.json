@@ -1,0 +1,19 @@
+{
+  "asset": "toggle-switch",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        0.58,
+        0.9,
+        0.48
+      ],
+      "position": [
+        0,
+        0.4,
+        0
+      ]
+    }
+  ]
+}

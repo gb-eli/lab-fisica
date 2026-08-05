@@ -1,0 +1,50 @@
+{
+  "version": "0.5.0",
+  "scope": "physics-only",
+  "routes": 10,
+  "checkpointsPerRoute": 4,
+  "checkpointTypes": [
+    "scene-exploration",
+    "parameter-change",
+    "analysis-or-validation",
+    "written-conclusion"
+  ],
+  "accessibility": {
+    "simplifiedInstructions": true,
+    "largeTouchTargets": true,
+    "strongKeyboardFocus": true,
+    "persistentLabels": true,
+    "reducedMotionCompatible": true,
+    "highContrastCompatible": true,
+    "speechOnDemand": true
+  },
+  "progress": {
+    "storage": "localStorage",
+    "resume": true,
+    "activeTime": true,
+    "minimumConclusionCharacters": 20,
+    "personalDataRequired": false
+  },
+  "validationMatrix": {
+    "laboratories": 8,
+    "profiles": [
+      "economic",
+      "medium",
+      "high",
+      "ultra"
+    ],
+    "criteria": [
+      "visual360",
+      "touch",
+      "readability",
+      "accessibility",
+      "performance",
+      "scientificCoherence"
+    ],
+    "exports": [
+      "JSON",
+      "CSV"
+    ]
+  },
+  "privacy": "local-only-no-transmission"
+}

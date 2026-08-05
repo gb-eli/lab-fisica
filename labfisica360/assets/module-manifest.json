@@ -1,0 +1,217 @@
+{
+  "version": "0.5.0",
+  "schemaVersion": 1,
+  "strategy": "hub-lightweight-demand-loaded",
+  "initialRoute": "home",
+  "initial3D": false,
+  "shell": {
+    "styles": [
+      "css/styles.css",
+      "css/design-system.css",
+      "css/portal-home.css",
+      "css/student-session.css",
+      "css/pedagogy.css",
+      "css/stability-recovery.css"
+    ],
+    "modules": [
+      "js/app.js",
+      "js/router.js",
+      "js/labs/route-registry.js",
+      "js/labs/route-resource-manager.js",
+      "js/session/student-session.js",
+      "js/modules/home.js",
+      "js/modules/roadmap.js"
+    ],
+    "precacheHeavyAssets": false
+  },
+  "routes": [
+    {
+      "route": "home",
+      "module": "js/modules/home.js",
+      "styles": [],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "roadmap",
+      "module": "js/modules/roadmap.js",
+      "styles": [],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "hall",
+      "module": "js/modules/hall.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/hall-premium.css",
+        "css/r2-core-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "coulomb",
+      "module": "js/modules/coulomb.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/r2-core-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "ohm",
+      "module": "js/modules/ohm.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/electrical-bench.css",
+        "css/r2-core-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "magnetism",
+      "module": "js/modules/magnetism.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/magnetism-lab.css",
+        "css/r3-reconstructed-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "energy",
+      "module": "js/modules/energy.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/energy-lab.css",
+        "css/r3-reconstructed-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "mechanics",
+      "module": "js/modules/mechanics.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/mechanics-lab.css",
+        "css/r3-reconstructed-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "waves",
+      "module": "js/modules/waves.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/waves-lab.css",
+        "css/r4-reconstructed-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "thermal",
+      "module": "js/modules/thermal.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/thermal-lab.css",
+        "css/r4-reconstructed-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    },
+    {
+      "route": "advanced",
+      "module": "js/modules/advanced.js",
+      "styles": [
+        "css/experience-workspace.css",
+        "css/artistic-refinement.css",
+        "css/performance-validation.css",
+        "css/advanced-lab.css",
+        "css/r4-reconstructed-labs.css"
+      ],
+      "loadPolicy": "on-navigation",
+      "releasePolicy": "dispose-runtime-remove-route-css-clear-dom"
+    }
+  ],
+  "session": {
+    "storage": "localStorage",
+    "fields": [
+      "name",
+      "className",
+      "shift"
+    ],
+    "shifts": [
+      "manha",
+      "tarde",
+      "noite"
+    ],
+    "exports": [
+      "json",
+      "csv"
+    ],
+    "tracks": [
+      "visits",
+      "activeSeconds",
+      "firstOpenedAt",
+      "lastOpenedAt",
+      "learningMode",
+      "mentorId",
+      "mentorSteps",
+      "hintsUsed"
+    ]
+  },
+  "cache": {
+    "shell": "install-time",
+    "laboratories": "runtime-on-demand",
+    "clearable": true,
+    "memoryReleasedOnExit": true,
+    "persistentCacheRetainedByDefault": true
+  },
+  "optionalModules": {
+    "mentorGuided": {
+      "loadPolicy": "on-user-selection",
+      "defaultLoaded": false,
+      "module": "js/mentors/mentor-controller.js",
+      "style": "css/mentor-guided.css",
+      "dependencies": [
+        "js/mentors/mentor-catalog.js",
+        "js/mentors/tracks/core-tracks.js",
+        "js/mentors/highlight-engine.js",
+        "js/mentors/step-validator.js"
+      ],
+      "supportedRoutes": [
+        "coulomb",
+        "ohm",
+        "mechanics"
+      ],
+      "loadTrigger": "explicit mentor selection",
+      "mentors": 6,
+      "routes": 8,
+      "tracks": 33,
+      "steps": 138
+    }
+  }
+}

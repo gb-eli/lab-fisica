@@ -1,0 +1,19 @@
+{
+  "asset": "multimeter",
+  "units": "meters",
+  "colliders": [
+    {
+      "shape": "box",
+      "size": [
+        0.92,
+        1.42,
+        0.32
+      ],
+      "position": [
+        0,
+        0.72,
+        0
+      ]
+    }
+  ]
+}

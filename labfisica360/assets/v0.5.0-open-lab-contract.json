@@ -1,0 +1,50 @@
+{
+  "version": "0.5.0",
+  "phase": "Consolidação pedagógica e acesso adaptativo",
+  "accessModes": [
+    "visitor",
+    "identified-student"
+  ],
+  "login": {
+    "required": false,
+    "fields": [
+      "name",
+      "className",
+      "shift",
+      "localPin"
+    ],
+    "pinStorage": "local hash",
+    "serverAuth": false
+  },
+  "tracking": {
+    "visitor": false,
+    "identifiedStudent": true,
+    "records": [
+      "routes",
+      "visits",
+      "activeSeconds",
+      "controlActions",
+      "mentorSteps"
+    ]
+  },
+  "adaptiveGraphics": {
+    "automatic": true,
+    "signals": [
+      "cpuCores",
+      "deviceMemory",
+      "pixelLoad",
+      "coarsePointer",
+      "saveData",
+      "effectiveConnection",
+      "reducedMotion"
+    ],
+    "scienceUnaffected": true
+  },
+  "pedagogy": [
+    "observe",
+    "experiment",
+    "compare",
+    "record"
+  ],
+  "demandLoading": true
+}

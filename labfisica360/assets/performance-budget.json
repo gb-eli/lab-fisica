@@ -1,0 +1,200 @@
+{
+  "version": "0.5.0",
+  "generatedAt": "2026-08-05T00:29:16.861Z",
+  "budgets": {
+    "javascriptBytes": 1200000,
+    "cssBytes": 420000,
+    "glbBytes": 1800000,
+    "largestModuleBytes": 180000,
+    "offlineCoreFiles": 110
+  },
+  "totals": {
+    "javascriptBytes": 897571,
+    "cssBytes": 192837,
+    "glbBytes": 827160,
+    "meshConstructors": 332,
+    "pointClouds": 2,
+    "instancedMeshes": 1,
+    "animationLoops": 9
+  },
+  "largestJavaScript": [
+    {
+      "file": "js/modules/ohm.js",
+      "bytes": 66530,
+      "type": "js",
+      "meshConstructors": 4,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 1
+    },
+    {
+      "file": "js/modules/hall3d.js",
+      "bytes": 38275,
+      "type": "js",
+      "meshConstructors": 40,
+      "pointClouds": 1,
+      "instancedMeshes": 0,
+      "animationLoops": 1
+    },
+    {
+      "file": "js/modules/thermal.js",
+      "bytes": 29931,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/modules/waves.js",
+      "bytes": 29811,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/modules/magnetism3d.js",
+      "bytes": 29565,
+      "type": "js",
+      "meshConstructors": 37,
+      "pointClouds": 0,
+      "instancedMeshes": 1,
+      "animationLoops": 1
+    },
+    {
+      "file": "js/pedagogy/guided-learning.js",
+      "bytes": 27549,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/app.js",
+      "bytes": 25541,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/modules/waves3d.js",
+      "bytes": 24861,
+      "type": "js",
+      "meshConstructors": 55,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 1
+    },
+    {
+      "file": "js/modules/coulomb.js",
+      "bytes": 24695,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/mentors/tracks/expansion-tracks.js",
+      "bytes": 24662,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/modules/mechanics.js",
+      "bytes": 24040,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    },
+    {
+      "file": "js/modules/magnetism.js",
+      "bytes": 23996,
+      "type": "js",
+      "meshConstructors": 0,
+      "pointClouds": 0,
+      "instancedMeshes": 0,
+      "animationLoops": 0
+    }
+  ],
+  "optimizationContracts": {
+    "sharedRuntime": "js/render/runtime.js",
+    "performanceMonitor": "js/render/performance-monitor.js",
+    "adaptiveOptimizer": "js/render/adaptive-scene-optimizer.js",
+    "runtimeRegistry": "js/render/runtime-registry.js",
+    "sceneSuspension": true,
+    "contextRecovery": true,
+    "dynamicResolution": true,
+    "pointsDrawRangeScaling": true,
+    "instancedMeshScaling": true,
+    "idleAssetPreload": true,
+    "explicitAssetRelease": true,
+    "scientificStateIndependentFromFps": true
+  },
+  "laboratoryContracts": [
+    {
+      "name": "hall",
+      "scene": "js/modules/hall3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "electricity",
+      "scene": "js/modules/ohm.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "magnetism",
+      "scene": "js/modules/magnetism3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "energy",
+      "scene": "js/modules/energy3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "mechanics",
+      "scene": "js/modules/mechanics3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "waves",
+      "scene": "js/modules/waves3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "thermal",
+      "scene": "js/modules/thermal3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    },
+    {
+      "name": "advanced",
+      "scene": "js/modules/advanced3d.js",
+      "usesSharedRuntime": true,
+      "cleanupRequired": true
+    }
+  ],
+  "withinStaticBudget": {
+    "javascript": true,
+    "css": true,
+    "glb": true,
+    "largestModule": true
+  }
+}
