@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "threeVersion": "0.184.0",
+  "ready": false,
+  "files": [
+    {
+      "file": "three.module.min.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.min.js",
+      "exists": false,
+      "size": 0,
+      "valid": false,
+      "sha256": null
+    },
+    {
+      "file": "three.core.min.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.core.min.js",
+      "exists": false,
+      "size": 0,
+      "valid": false,
+      "sha256": null
+    }
+  ],
+  "errors": []
+}
