@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { existsSync, readFileSync } from 'node:fs';
+const read=(p)=>readFileSync(new URL(`../${p}`,import.meta.url),'utf8');
+for (const p of ['tools/vendor_three.py','tools/full_scene_pilot.py','vendor/three/vendor-manifest.json','validation/r7-full-scenes.json','docs/PILOTO_CENAS_COMPLETAS_R7A.md','docs/RELATORIO_VALIDACAO_V0.4.6.md']) assert.ok(existsSync(new URL(`../${p}`,import.meta.url)),p);
+const loader=read('js/render/three-loader.js');
+assert.match(loader,/inspectLocalThree/); assert.match(loader,/allowRemote/); assert.match(loader,/fisica:three-ready/); assert.match(loader,/fisica:three-error/); assert.match(loader,/local-only/);
+const runtime=read('js/render/runtime.js'); assert.match(runtime,/allowRemoteThree/); assert.match(runtime,/threeLoadReport/);
+const vendor=JSON.parse(read('vendor/three/vendor-manifest.json')); assert.equal(vendor.threeVersion,'0.184.0'); assert.equal(vendor.files.length,2);
+const pilot=JSON.parse(read('validation/r7-full-scenes.json')); assert.equal(pilot.version,'0.4.6'); assert.deepEqual(pilot.routes,['hall','coulomb','ohm']); assert.ok(['approved','blocked-navigation-policy','blocked-local-three'].includes(pilot.status));
+const manifest=JSON.parse(read('assets/manifest.json')); assert.equal(manifest.version,'0.5.0'); assert.equal(manifest.groups['r7-scene-pilot'].phase,'R7A');
+console.log('✓ R7A v0.4.6: política local, diagnóstico de origem e piloto das cenas prioritárias validados estruturalmente.');

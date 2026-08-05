@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#050912" />
+  <meta name="description" content="Plataforma modular de laboratórios científicos 3D para GitHub Pages." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
+  <link rel="stylesheet" href="css/portal-home.css" />
+  <link rel="stylesheet" href="css/student-session.css" />
+  <link rel="stylesheet" href="css/pedagogy.css" />
+  <link rel="stylesheet" href="css/stability-recovery.css" />
+  <title>Portal dos Laboratórios · Física Imersiva 360</title>
+</head>
+<body>
+  <noscript>Esta plataforma precisa de JavaScript para executar as simulações.</noscript>
+
+  <div id="boot" class="boot" role="status" aria-live="polite">
+    <div class="boot__core" aria-hidden="true"></div>
+    <h1>Física Imersiva 360</h1>
+    <p id="boot-text">Preparando o portal leve…</p>
+    <div class="progress"><span id="boot-progress"></span></div>
+  </div>
+
+  <div id="app" class="app is-hidden">
+    <header class="topbar">
+      <button id="brand" class="brand" aria-label="Voltar ao portal inicial">
+        <span class="brand__orb" aria-hidden="true"></span>
+        <span><strong>Física Imersiva</strong><small>Laboratório 360</small></span>
+      </button>
+      <div class="topbar__context" aria-live="polite">
+        <span id="module-kicker">Portal Científico</span>
+        <strong id="module-title">Laboratórios de Física</strong>
+      </div>
+      <div class="topbar__actions">
+        <button id="btn-student-session" class="session-trigger" type="button" aria-label="Abrir sessão do estudante">
+          <span class="session-trigger__avatar" data-session-avatar>?</span>
+          <span class="session-trigger__copy"><strong data-session-name>Visitante</strong><small data-session-class>Entrar como estudante</small></span>
+        </button>
+        <button id="btn-learning-mode" class="pill learning-mode-button" type="button" title="Escolher modo Livre ou Guiado">Modo livre</button>
+        <button id="btn-progress" class="pill pedagogy-progress-button" title="Abrir roteiro pedagógico" aria-label="Abrir roteiro pedagógico"><span class="pedagogy-progress-button__text">Progresso</span><strong data-global-progress>0%</strong></button>
+        <button id="btn-help" class="icon-btn" data-icon="help" title="Ajuda" aria-label="Abrir ajuda"></button>
+        <button id="btn-quality" class="pill" data-icon="quality" aria-label="Alterar qualidade gráfica"><span class="icon-slot"></span><span class="pill__label">Auto</span></button>
+        <button id="btn-settings" class="icon-btn" data-icon="settings" title="Configurações" aria-label="Abrir configurações"></button>
+      </div>
+    </header>
+
+    <main id="view" class="view" tabindex="-1"></main>
+
+    <nav class="dock" aria-label="Navegação principal simplificada">
+      <button data-route="home" data-icon="home" class="dock__item is-active"><span class="dock__glyph"></span><small>Início</small></button>
+      <button data-route="roadmap" data-icon="roadmap" class="dock__item"><span class="dock__glyph"></span><small>Laboratórios</small></button>
+      <button data-route="hall" data-icon="hall" class="dock__item"><span class="dock__glyph"></span><small>Hall 3D</small></button>
+      <button id="dock-progress" data-icon="progress" class="dock__item"><span class="dock__glyph"></span><small>Progresso</small></button>
+      <button id="dock-session" data-icon="user" class="dock__item"><span class="dock__glyph"></span><small>Sessão</small></button>
+    </nav>
+  </div>
+
+
+  <dialog id="student-session-dialog" class="modal">
+    <form method="dialog" class="modal__card student-session-card">
+      <div class="modal__head"><div><small>REGISTRO LOCAL</small><h2>Sessão do estudante</h2></div><button aria-label="Fechar">×</button></div>
+      <section data-session-login>
+        <div class="student-access-intro">
+          <span class="badge">Acesso aberto</span>
+          <h3>Explore livremente ou registre sua experiência</h3>
+          <p><strong>Visitante:</strong> usa todos os laboratórios sem salvar. <strong>Estudante identificado:</strong> registra tempo, módulos e ações para exportação quando o professor solicitar.</p>
+        </div>
+        <div class="student-session-form">
+          <label>Nome do estudante<input id="student-name" type="text" maxlength="70" autocomplete="name" placeholder="Nome completo" required /></label>
+          <label>Turma<input id="student-class" type="text" maxlength="40" placeholder="Ex.: 2DS A" required /></label>
+          <label>Turno<select id="student-shift"><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select></label>
+          <label>PIN local<input id="student-pin" type="password" inputmode="numeric" minlength="4" maxlength="12" autocomplete="new-password" placeholder="4 a 12 números" required /></label>
+        </div>
+        <p class="fineprint">O PIN apenas separa sessões neste aparelho. Não é uma autenticação online e não recupera dados apagados do navegador.</p>
+        <div class="student-session-actions"><button id="student-login" type="button" class="primary">Entrar e registrar</button><button value="cancel">Explorar sem salvar</button></div>
+      </section>
+      <section data-session-current hidden class="student-session-current">
+        <div class="student-session-profile"><span class="student-session-profile__avatar" data-dialog-avatar>?</span><div><strong data-dialog-name></strong><small data-dialog-class></small><em data-dialog-learning>Modo Livre</em></div></div>
+        <div class="student-session-stats"><article><span>Tempo ativo</span><strong data-dialog-time>0s</strong></article><article><span>Laboratórios</span><strong data-dialog-labs>0</strong></article><article><span>Acessos</span><strong data-dialog-visits>0</strong></article></div>
+        <div class="student-session-routes" data-dialog-routes></div>
+        <div class="student-session-actions"><button id="export-session-json" type="button">Exportar JSON</button><button id="export-session-csv" type="button">Exportar CSV</button><button id="switch-student" type="button">Trocar estudante</button><button id="logout-student" type="button" class="danger">Encerrar e sair</button></div>
+      </section>
+      <p class="fineprint">Nome, turma, turno, PIN protegido por hash, tempos e ações ficam apenas no armazenamento local. A exportação acontece somente quando você aciona um dos botões.</p>
+    </form>
+  </dialog>
+  <dialog id="settings-dialog" class="modal">
+    <form method="dialog" class="modal__card">
+      <div class="modal__head"><h2>Configurações</h2><button aria-label="Fechar">×</button></div>
+      <label>Qualidade gráfica
+        <select id="quality-select">
+          <option value="auto">Automático</option>
+          <option value="economic">Econômico</option>
+          <option value="medium">Médio</option>
+          <option value="high">Alto</option>
+          <option value="ultra">Ultra</option>
+          <option value="scientific">Científico</option>
+        </select>
+      </label>
+      <label class="switch"><input id="reduce-motion" type="checkbox" /><span>Reduzir movimento</span></label>
+      <label class="switch"><input id="high-contrast" type="checkbox" /><span>Alto contraste</span></label>
+      <label>Densidade da interface
+        <select id="density-select">
+          <option value="comfortable">Confortável</option>
+          <option value="compact">Compacta</option>
+        </select>
+      </label>
+      <label>Modo de experiência
+        <select id="experience-mode-select">
+          <option value="guided">Guiado · recomendado ao aluno</option>
+          <option value="explore">Explorar · mostra mais painéis</option>
+          <option value="presentation">Apresentação · prioriza a cena</option>
+        </select>
+      </label>
+      <label>Escala da interface
+        <select id="ui-scale-select">
+          <option value="90">90%</option>
+          <option value="100">100%</option>
+          <option value="110">110%</option>
+          <option value="120">120%</option>
+        </select>
+      </label>
+      <label class="switch"><input id="low-transparency" type="checkbox" /><span>Reduzir transparências</span></label>
+      <fieldset class="settings-group"><legend>Acessibilidade pedagógica</legend>
+        <label class="switch"><input id="tutorial-auto-start" type="checkbox" /><span>Iniciar tutorial na primeira visita</span></label>
+        <label class="switch"><input id="simplified-instructions" type="checkbox" /><span>Instruções em linguagem simplificada</span></label>
+        <label class="switch"><input id="large-touch-targets" type="checkbox" /><span>Ampliar alvos de toque</span></label>
+        <label class="switch"><input id="strong-focus" type="checkbox" checked /><span>Destaque forte de foco pelo teclado</span></label>
+        <label class="switch"><input id="persistent-labels" type="checkbox" /><span>Manter rótulos de apoio visíveis</span></label>
+        <p class="fineprint">O roteiro registra apenas progresso, tempo ativo, conclusão e validações locais. Nenhum dado é enviado.</p>
+      </fieldset>
+      <fieldset class="settings-group"><legend>Renderização 3D</legend>
+        <label class="switch"><input id="dynamic-resolution" type="checkbox" checked /><span>Resolução dinâmica</span></label>
+        <label class="switch"><input id="post-processing" type="checkbox" checked /><span>Pós-processamento nos perfis compatíveis</span></label>
+        <label class="switch"><input id="show-performance" type="checkbox" /><span>Mostrar métricas de desempenho</span></label>
+        <label class="switch"><input id="adaptive-quality" type="checkbox" checked /><span>Otimização adaptativa de partículas e efeitos</span></label>
+        <label class="switch"><input id="pause-hidden-scenes" type="checkbox" checked /><span>Pausar cenas fora de vista</span></label>
+        <label class="switch"><input id="webgl-recovery" type="checkbox" checked /><span>Recuperar automaticamente o WebGL</span></label>
+        <label class="switch"><input id="surface-detail" type="checkbox" checked /><span>Detalhes de superfície e acabamento físico</span></label>
+        <label class="switch"><input id="inspection-lighting" type="checkbox" checked /><span>Iluminação de inspeção próxima da câmera</span></label>
+        <label class="switch"><input id="camera-assist" type="checkbox" checked /><span>Barra de câmera e gestos assistidos</span></label>
+        <label class="switch"><input id="safe-3d" type="checkbox" /><span>Modo 3D seguro (limita efeitos conforme o aparelho)</span></label>
+        <label class="switch"><input id="allow-remote-three" type="checkbox" /><span>Usar motor 3D pela internet quando a cópia local estiver ausente</span></label>
+        <label class="switch"><input id="force-2d" type="checkbox" /><span>Modo estável 2D (desativa o WebGL)</span></label>
+        <div class="performance-audit webgl-preflight-panel">
+          <div class="performance-audit__head"><strong>Pré-teste WebGL</strong><span id="webgl-preflight-status" class="status">Pendente</span></div>
+          <output id="webgl-preflight-output" aria-live="polite">Teste contexto, shaders e desenho antes de abrir uma cena pesada.</output>
+          <div class="performance-audit__actions">
+            <button id="run-webgl-preflight" type="button">Testar WebGL</button>
+            <button id="run-webgl-recovery-test" type="button">Testar recuperação</button>
+          </div>
+        </div>
+        <div class="performance-audit">
+          <div class="performance-audit__head"><strong>Diagnóstico transversal</strong><span id="audit-status" class="status">Aguardando</span></div>
+          <output id="render-audit-output" aria-live="polite">Abra um laboratório 3D e execute o diagnóstico.</output>
+          <div class="performance-audit__actions">
+            <button id="run-render-audit" type="button">Executar diagnóstico</button>
+            <button id="export-render-audit" type="button">Exportar JSON</button>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="device-validation"><legend>Validação em aparelho real</legend>
+        <div class="device-validation__head"><strong>Matriz por dispositivo</strong><span id="device-validation-status" class="status" data-state="com-ressalvas">Pendente</span></div>
+        <label>Nome do aparelho<input id="device-validation-label" type="text" maxlength="80" placeholder="Ex.: Moto G34 · Chrome · paisagem" /></label>
+        <div class="device-validation__manual">
+          <label>Visual<select data-device-criterion="visual"><option value="pending">Pendente</option><option value="pass">Aprovado</option><option value="warning">Ressalva</option><option value="fail">Falhou</option></select></label>
+          <label>Toque<select data-device-criterion="touch"><option value="pending">Pendente</option><option value="pass">Aprovado</option><option value="warning">Ressalva</option><option value="fail">Falhou</option></select></label>
+          <label>Legibilidade<select data-device-criterion="readability"><option value="pending">Pendente</option><option value="pass">Aprovado</option><option value="warning">Ressalva</option><option value="fail">Falhou</option></select></label>
+          <label>Orientação<select data-device-criterion="orientation"><option value="pending">Pendente</option><option value="pass">Aprovado</option><option value="warning">Ressalva</option><option value="fail">Falhou</option></select></label>
+          <label>Temperatura<select data-device-criterion="temperature"><option value="pending">Pendente</option><option value="pass">Aprovado</option><option value="warning">Ressalva</option><option value="fail">Falhou</option></select></label>
+          <label>Bateria<select data-device-criterion="battery"><option value="pending">Pendente</option><option value="pass">Aprovado</option><option value="warning">Ressalva</option><option value="fail">Falhou</option></select></label>
+        </div>
+        <label>Observações<textarea id="device-validation-notes" placeholder="Registre travamentos, sobreposição, aquecimento, consumo ou dificuldade de controle."></textarea></label>
+        <output id="device-validation-output" aria-live="polite">Execute o diagnóstico no aparelho e preencha os itens visuais.</output>
+        <div class="device-validation__actions">
+          <button id="run-device-validation" type="button">Executar diagnóstico</button>
+          <button id="save-device-validation" type="button">Salvar aparelho</button>
+          <button id="export-device-validation-json" type="button">Exportar matriz JSON</button>
+          <button id="export-device-validation-csv" type="button">Exportar matriz CSV</button>
+        </div>
+        <small id="device-validation-history" class="device-validation__history">Nenhum aparelho salvo.</small>
+      </fieldset>
+      <label class="switch"><input id="sound-enabled" type="checkbox" checked /><span>Sons da interface</span></label>
+      <button id="clear-lab-cache" type="button">Limpar arquivos baixados dos laboratórios</button>
+      <button id="clear-local" type="button" class="danger">Apagar dados locais</button>
+      <p class="fineprint">A sessão do estudante é opcional e fica somente neste navegador. Nenhum dado é enviado automaticamente.</p>
+    </form>
+  </dialog>
+
+  <dialog id="help-dialog" class="modal">
+    <form method="dialog" class="modal__card modal__card--wide">
+      <div class="modal__head"><h2>Como explorar</h2><button aria-label="Fechar">×</button></div>
+      <div class="help-grid">
+        <article><b>Hall 3D</b><p>Arraste para orbitar, use a roda ou pinça para aproximar e toque nos portais. A interface segue um padrão científico único em todos os módulos.</p></article>
+        <article><b>Coulomb</b><p>Arraste cargas e sonda; ative campo e potencial; salve ou exporte o experimento.</p></article>
+        <article><b>Lei de Ohm</b><p>Configure fonte CV/CC, multímetro, fusíveis, reostato, LED e diodo; mova, gire e reconecte os equipamentos em 3D.</p></article>
+        <article><b>Eletromagnetismo 360</b><p>Explore ímãs, solenoides, indução, motores, geradores e transformadores em 3D com parâmetros científicos.</p></article>
+        <article><b>Energia 360</b><p>Inspecione uma casa elétrica, proteções, geração solar/eólica, bateria e rede de distribuição com fluxo e perdas calculados.</p></article>
+        <article><b>Mecânica 360</b><p>Explore rampas, vetores de força, lançamentos, colisões, pêndulos, molas, queda livre e órbitas com câmera lenta e gráficos.</p></article>
+        <article><b>Ondas, Som e Óptica 360</b><p>Explore interferência, ressonância, acústica, Doppler, lentes, espelhos, prismas, fibra óptica e dupla fenda.</p></article>
+        <article><b>Física Avançada</b><p>Explore prévias 3D de Quântica, Relatividade, Matéria Escura, Buracos Negros e causalidade. A Química será uma plataforma independente.</p></article>
+        <article><b>Roteiro pedagógico</b><p>Abra Progresso para acompanhar objetivos, checkpoints, tutorial, conclusão, tempo ativo e validação por perfil gráfico.</p></article>
+        <article><b>Mobile</b><p>Use a tela em paisagem. Um dedo gira, dois dedos movem o foco, a pinça aproxima e o toque duplo restaura a câmera.</p></article>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="module-card-template">
+    <article class="module-card">
+      <div class="module-card__icon"></div>
+      <div><small class="module-card__phase"></small><h3></h3><p></p></div>
+      <span class="status"></span>
+    </article>
+  </template>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

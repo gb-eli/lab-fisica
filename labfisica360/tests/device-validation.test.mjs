@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import { access, readFile } from 'node:fs/promises';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { classifyValidation, MANUAL_CRITERIA } from '../js/device-validation.js';
+
+const project = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+for (const file of ['js/device-validation.js','css/device-validation.css','docs/MATRIZ_VALIDACAO_DISPOSITIVOS.md']) await access(resolve(project,file));
+assert.equal(MANUAL_CRITERIA.length,6);
+assert.equal(classifyValidation([{status:'pass'}],{visual:'pass'}),'aprovado');
+assert.equal(classifyValidation([{status:'warning'}],{visual:'pass'}),'com-ressalvas');
+assert.equal(classifyValidation([{status:'pass'}],{visual:'pending'}),'com-ressalvas');
+assert.equal(classifyValidation([{status:'pass'}],{visual:'fail'}),'reprovado');
+const source=await readFile(resolve(project,'js/device-validation.js'),'utf8');
+assert.match(source,/undersizedTargets/);
+assert.match(source,/exportDeviceValidationJSON/);
+assert.match(source,/exportDeviceValidationCSV/);
+assert.match(source,/local-only|localStorage/);
+const index=await readFile(resolve(project,'index.html'),'utf8');
+assert.match(index,/id="run-device-validation"/);
+assert.match(index,/data-device-criterion="temperature"/);
+assert.match(index,/data-device-criterion="battery"/);
+console.log('✓ Matriz de aparelhos: diagnóstico automático, checklist manual, persistência e exportações validados.');

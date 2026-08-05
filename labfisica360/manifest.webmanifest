@@ -1,0 +1,11 @@
+{
+  "name": "Física Imersiva 360",
+  "short_name": "Física 360",
+  "description": "Portal modular de laboratórios de Física com ambientes 3D carregados sob demanda.",
+  "start_url": "./#home",
+  "display": "standalone",
+  "background_color": "#050912",
+  "theme_color": "#050912",
+  "orientation": "any",
+  "version": "0.5.0"
+}
